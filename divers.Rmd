@@ -1,0 +1,59 @@
+---
+title: "Divers"
+output: 
+  html_document: 
+    number_sections: false
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+## Réseaux professionnels
+
+<!-- - Membre du [GDR MAGIS](http://gdr-magis.imag.fr) (depuis 2021).<br/>Co-porteur de l'Action de Recherche (Carto)graphies et (Géo)visualisations de données. -->
+- Membre du groupe de recherche [TTT](https://neocarto.hypotheses.org/ttt-tobler) (depuis 2020)
+- Membre du consortium [imaGEO](https://imageo.hypotheses.org/) (voir [MadMaps](https://madmaps.huma-num.fr/) et [Navigae](https://www.navigae.fr/?lang=fr)) (depuis 2018)
+- Membre de la commission sémiologie du [Comité Français de Cartographie](https://www.lecfc.fr/)) (depuis 2014)
+- Animateur du groupe cartographie du réseau [Migreurop](http://www.migreurop.org/?lang=fr) (depuis 2009)
+- Membre du réseau [MATE SHS](https://mate-shs.cnrs.fr) (depuis 2015)
+
+Membre également des communautés suivantes : 
+
+- R spatial (voir par exemple le projet [Rzine](http://rzine.fr/publication/20191125_ironcurtain))
+- D3js (ambassadeur Observarble. Voir mon [notebook](https://observablehq.com/@neocartocnrs))
+- Hypothèses (animateur du carnet de recherche [neocarto](https://neocarto.hypotheses.org/))
+
+*A aussi été membre par le passé du groupe ElementR, du groupe de recherche Cartomouv’, du groupe de recherche HyperCarte et du programme de recherche européen ESPON*
+
+## Actions transversales (CNRS)
+- 2021 : Participation au groupe régional d’interclassement des IT CNRS
+- 2021 : Président d'un concours externe CNRS, IE BAD D. 
+- 2020 : Participation au groupe régional d’interclassement des IT CNRS (Délégation Normandie)
+- 2020 : Membre expert pour le jury de recrutement IR (interne) en BAP D
+- 2019 : Membre expert pour jury blanc (concours internes)
+- 2018 : Membre expert pour le jury de recrutement IGE (externe) à l’université du Havre
+- 2017 : Président du jury de recrutement IE (interne) en BAP D
+- 2016 : Membre d’un comité d’expert HCERES (vague C d’évaluation)
+- 2016, Membre expert pour le jury de recrutement IR (interne) en BAP D
+- 2014, Membre expert pour le jury de recrutement IE (interne) en BAP D
+- 2013, Membre expert pour le jury de recrutement IE (externe) en BAP D
+
+- Depuis 2014, Assistant de prévention hygiène et sécurité (ACMO).
+
+## Colloques, écoles thématiques, ANF
+
+- 2021 : Organisation de l’école thémathique [TRANSCARTO](https://transcarto.sciencesconf.org/). Membre de l'équipe pédagogique et du comité scientifique. 
+- 2021 : Organisation de l’école thémathique [SIGR](https://sigr2021.github.io/site/). Formateur et membre du comité d’organisation. 
+- 2020 : Organisation du colloque [Cartomob](https://cartomob.sciencesconf.org/) à Toulouse. Membre du comité d’organisation, du comité scientifique et du comité de programme.
+- 2018 : Organisation de l’[ANF Dataviz]() à Sète. Formateur et membre du comité d’organisation. 
+- 2016 : Organisation du colloque [Temps, Art et Cartographie](https://art-carto-semio.sciencesconf.org/) à Strasbourg. Membre du comité d’organisation et du comité scientifique.
+- 2005 : organisation du colloque international Villes et Réseaux, quelles intégrations territoriales à La Rochelle. Membre du comité d’organisation.
+
+## Revues
+
+- Membre du conseil scientifique de l'[Atlas bleu](https://atbl.poissonbouge.net/), Revue Cartographique des Mers et des Littoraux
+- Reponsable de la rubrique production de territoires de la revue [Cause Commune](https://www.causecommune-larevue.fr/)
+
+## Expositions
+
+- [Moving Beyond Borders](https://vimeo.com/146229544) (exposition itinérante depuis 2015)

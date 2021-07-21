@@ -1,0 +1,11 @@
+---
+title: "Vidéos"
+output: 
+  html_document: 
+    number_sections: no
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+<a href = "https://www.youtube.com/channel/UCoZLDHWvG1cp4h6IH4nIegQ/videos" target = "_BLANK"><img src ="img/pictures/videos.png" width = "100%"></img></a>

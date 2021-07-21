@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Publications</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Accueil
+  </a>
+</li>
+<li>
+  <a href="books.html">Livres</a>
+</li>
+<li>
+  <a href="publis.html">Publications</a>
+</li>
+<li>
+  <a href="communications.html">Communications</a>
+</li>
+<li>
+  <a href="cours.html">Enseignement</a>
+</li>
+<li>
+  <a href="gallery.html">Gallerie</a>
+</li>
+<li>
+  <a href="videos.html">Vidéos</a>
+</li>
+<li>
+  <a href="divers.html">Divers</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://gitlab.huma-num.fr/nlambert">
+    <span class="fa fa-gitlab"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Publications</h1>
+
+</div>
+
+
+<div id="refs" class="references">
+<div id="ref-lambert2021covid">
+<p>Lambert, N. (2021). Cartographier la Covid-19 : quelles narrations ? <em>RFST, Revue Francophone sur la Santé et les Territoires</em>. <a href="https://journals.openedition.org/rfst/853">https://journals.openedition.org/rfst/853</a></p>
+</div>
+<div id="ref-zanin2021octopus">
+<p>Zanin, C., &amp; Lambert, N. (2021). Octopus Mapping, one of the Mad Maps. NATO Octopus, control over the weapons’ sales. <em>International Journal of Cartography (TICA)</em>. <a href="https://doi.org/10.1080/23729333.2021.1917057">https://doi.org/10.1080/23729333.2021.1917057</a></p>
+</div>
+<div id="ref-bahoken2020seduction">
+<p>Bahoken, F., Jégou, L., Lagarde, D., &amp; Lambert, N. (2020). La séduction des cartes du geoweb. Le cas des flux de migrants internationaux. <em>Cybergeo: European Journal of Geography</em>. <a href="https://journals.openedition.org/cybergeo/33792">https://journals.openedition.org/cybergeo/33792</a></p>
+</div>
+<div id="ref-bahoken2020antiatlas">
+<p>Bahoken, F., &amp; Lambert, N. (2020). Méfiez-vous des cartes, pas des migrants. <em>AntiAtlas Journal</em>. <a href="https://www.antiatlas-journal.net/04-mefiez-vous-des-cartes-pas-des-migrants/">https://www.antiatlas-journal.net/04-mefiez-vous-des-cartes-pas-des-migrants/</a></p>
+</div>
+<div id="ref-lambert2020creation">
+<p>Lambert, N. (2020). Every map is an act of creation and not a mirror of the World. Some rhetorical issues about migration mapping. <em>The Large Glass – journal for contemporary art, culture and theory</em>.</p>
+</div>
+<div id="ref-lambert2020innocentes">
+<p>Lambert, N. (2020). Les cartes ne sont jamais innocentes…. <em>Progressistes n°17</em>. <a href="https://revue-progressistes.org/wp-content/uploads/2020/05/AA-Progressistes-N27-basdef.pdf">https://revue-progressistes.org/wp-content/uploads/2020/05/AA-Progressistes-N27-basdef.pdf</a></p>
+</div>
+<div id="ref-lambert2020practical">
+<p>Lambert, N., &amp; Zanin, C. (2020). <em>Practical Handbook of Thematic Cartography: Principles, Methods, and Applications</em>. (S.l.): CRC Press. <a href="https://www.taylorfrancis.com/books/978042929196">https://www.taylorfrancis.com/books/978042929196</a></p>
+</div>
+<div id="ref-baciocchi2019documenting">
+<p>Baciocchi, S., Beauguitte, L., Blavier, P., &amp; Lambert, N. (2019). Documenting the Diffusion of the 2016 French Nuit Debout. <a href="https://brill.com/view/journals/rdj/4/1/article-p55_55.xml?language=en">https://brill.com/view/journals/rdj/4/1/article-p55_55.xml?language=en</a></p>
+</div>
+<div id="ref-giraud2019reproducible">
+<p>Giraud, T., &amp; Lambert, N. (2019). Reproducible Workflow for Cartography-Migrants Deaths in the Mediterranean. Dans <em>Proceedings of the ICA</em> (Vol. 2, pp. NA‑NA). Copernicus GmbH. <a href="https://www.proc-int-cartogr-assoc.net/2/38/2019/ica-proc-2-38-2019.pdfhttps://www.proc-int-cartogr-assoc.net/2/38/2019/ica-proc-2-38-2019.pdf">https://www.proc-int-cartogr-assoc.net/2/38/2019/ica-proc-2-38-2019.pdfhttps://www.proc-int-cartogr-assoc.net/2/38/2019/ica-proc-2-38-2019.pdf</a></p>
+</div>
+<div id="ref-lambert2019pmadmaps">
+<p>Lambert, N., &amp; Zanin, C. (2019). <em>Mad Maps – L’atlas qui va changer votre vision du Monde</em>. (S.l.): Armand Colin. <a href="https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde">https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde</a></p>
+</div>
+<div id="ref-clochard2019atlas">
+<p>Michalon, B., Clochard, O., Akoka, K., Bacon, L., Blanchard, E., Carrère, V., … others. (2019). <em>The Atlas of Migration in Europe. A Critical Geography of Migration Policies</em>. (S.l.): Routledge. <a href="https://www.routledge.com/The-Atlas-of-Migration-in-Europe-A-Critical-Geography-of-Migration-Policies/igreurop/p/book/9781138392861">https://www.routledge.com/The-Atlas-of-Migration-in-Europe-A-Critical-Geography-of-Migration-Policies/igreurop/p/book/9781138392861</a></p>
+</div>
+<div id="ref-beauguitte2018nuits">
+<p>Beauguitte, L., &amp; Lambert, N. (2018). Les Nuits debout en Île-de-France: diffusion spatiale d’une innovation politique. Métropolitiques. <a href="https://metropolitiques.eu/IMG/pdf/met-beauguitte-lambert.pdf">https://metropolitiques.eu/IMG/pdf/met-beauguitte-lambert.pdf</a></p>
+</div>
+<div id="ref-didelon2018mental">
+<p>Didelon-Loiseau, C., Ruffray, S. de, &amp; Lambert, N. (2018). Mental maps of global regions: identifying and characterizing « hard » and « soft » regions. <em>Journal of Cultural Geography</em>, <em>35</em>(2), 210‑229. <a href="https://www.tandfonline.com/eprint/BDYtcsbgTCFKbV27uv9H/full">https://www.tandfonline.com/eprint/BDYtcsbgTCFKbV27uv9H/full</a></p>
+</div>
+<div id="ref-zanin2018cartographie">
+<p>Zanin, C., &amp; Lambert, N. (2018). Cartographie et construction territoriale européenne. Dans J. F. Dasí (Éd.), <em>Territorio y estados, elementos para la coordinacion de las politicas de ordenacion del territorio en el siglo XXI</em>. (S.l.): Springer. <a href="https://www.marcialpons.es/libros/territorio-y-estados/9788416556854/">https://www.marcialpons.es/libros/territorio-y-estados/9788416556854/</a></p>
+</div>
+<div id="ref-bacon2017cartographier">
+<p>Bacon, L., Clochard, O., Honoré, T., Lambert, N., Mekdjian, S., &amp; Rekacewicz, P. (2017). Cartographier les mouvements migratoires. <em>Revue européenne des migrations internationales</em>, <em>32</em>(3 et 4), 185‑214. <a href="https://journals.openedition.org/remi/8249">https://journals.openedition.org/remi/8249</a></p>
+</div>
+<div id="ref-bahoken2017contrefacons">
+<p>Bahoken, F., &amp; Lambert, N. (2017). Contrefaçons cartographiques. Dans Migreurop (Éd.), <em>Atlas des migrants en Europe. Approches critiques des politiques migratoires</em> (3e éd.). (S.l.): Armand Colin. <a href="https://halshs.archives-ouvertes.fr/UP-SOCIETES-HUMANITES/hal-02939029v1">https://halshs.archives-ouvertes.fr/UP-SOCIETES-HUMANITES/hal-02939029v1</a></p>
+</div>
+<div id="ref-bahoken2017interroger">
+<p>Bahoken, F., Lambert, N., &amp; Rekacewicz, P. (2017). Interroger les cartes: raisons et affects. Dans Migreurop (Éd.), <em>Atlas des migrants en Europe. Approches critiques des politiques migratoires</em> (3e éd.). (S.l.): Armand Colin. <a href="https://halshs.archives-ouvertes.fr/halshs-02937140/">https://halshs.archives-ouvertes.fr/halshs-02937140/</a></p>
+</div>
+<div id="ref-clochard2017interroger">
+<p>Clochard, O., &amp; Lambert, N. (2017). Interroger les frontières. Dans Migreurop (Éd.), <em>Atlas des migrants en Europe. Approches critiques des politiques migratoires</em> (3e éd.). (S.l.): Armand Colin.</p>
+</div>
+<div id="ref-furri2017mort">
+<p>Furri, F., Galisson, M., &amp; Lambert, N. (2017). Morts pour l’Europe. Dans Migreurop (Éd.), <em>Atlas des migrants en Europe. Approches critiques des politiques migratoires</em> (3e éd.). (S.l.): Armand Colin.</p>
+</div>
+<div id="ref-giraud2017reproducible">
+<p>Giraud, T., &amp; Lambert, N. (2017). Reproducible cartography. Dans <em>International Cartographic Conference</em> (pp. 173‑183). Springer. <a href="https://link.springer.com/chapter/10.1007/978-3-319-57336-6_13">https://link.springer.com/chapter/10.1007/978-3-319-57336-6_13</a></p>
+</div>
+<div id="ref-lambert2017mortalité">
+<p>Lambert, N. (2017). Cartographier la mortalité des migrants sur les routes migratoires vers l’Union européenne. Transferts possibles pour les Amériques ? Dans L. R. &amp; Béatrice Halsouet (Éd.), <em>Quand la mort frappe l’immigrant, défis et adaptations</em>. (S.l.): Presses universitaires de Montréal (PUM). <a href="https://www.pum.umontreal.ca/catalogue/quand-la-mort-frappe-limmigrant">https://www.pum.umontreal.ca/catalogue/quand-la-mort-frappe-limmigrant</a></p>
+</div>
+<div id="ref-lambert2016chemin">
+<p>Lambert, N., &amp; Galisson, M. (2016). La mort au bout du chemin. Dans D. L. V. &amp; Samuel Lequette (dirs.) (Éd.), <em>Décamper</em>. (S.l.): éditions la découverte. <a href="https://editionsladecouverte.fr/catalogue/index-D__camper-9782707192516.html">https://editionsladecouverte.fr/catalogue/index-D__camper-9782707192516.html</a></p>
+</div>
+<div id="ref-lambert2016manuel">
+<p>Lambert, N., &amp; Zanin, C. (2016). <em>Manuel de cartographie: principes, méthodes, applications</em>. (S.l.): Armand Colin. <a href="https://hal.archives-ouvertes.fr/hal-01973811/">https://hal.archives-ouvertes.fr/hal-01973811/</a></p>
+</div>
+<div id="ref-beauguitte2015hyperatlas">
+<p>Beauguitte, L., &amp; Lambert, N. (2015). L’HyperAtlas électoral parisien (2007-2012) Un outil pour l’analyse des dynamiques électorales intra-urbaines.</p>
+</div>
+<div id="ref-clochard2015evolution">
+<p>Clochard, O., Lambert, N., Schmoll, C., Thiollet, H., &amp; Wenden, C. W. de. (2015). L’évolution d’un régime frontalier en mer Méditerranée. CNRS éditions.</p>
+</div>
+<div id="ref-commenges2015enhancing">
+<p>Commenges, H., Giraud, T., &amp; Lambert, N. (2015). Enhancing Spatial Patterns Representations by Functional Semantic Simplification. Dans <em>27th International Cartographic Conference</em>. <a href="https://cel.archives-ouvertes.fr/ENPC-LEESU/hal-01217179v1">https://cel.archives-ouvertes.fr/ENPC-LEESU/hal-01217179v1</a></p>
+</div>
+<div id="ref-lambert2015close">
+<p>Lambert, N. (2015). Close the camps: une cartographie participative contre l’enfermement des étrangers. <a href="http://mappemonde-archive.mgm.fr/num43/internet/int14301.html">http://mappemonde-archive.mgm.fr/num43/internet/int14301.html</a></p>
+</div>
+<div id="ref-lambert2015damnes">
+<p>Lambert, N. (2015). Les damnés de la mer. Géoconfluences. <a href="http://geoconfluences.ens-lyon.fr/informations-scientifiques/a-la-une/carte-a-la-une/carte-a-la-une-les-damnes-de-la-mer">http://geoconfluences.ens-lyon.fr/informations-scientifiques/a-la-une/carte-a-la-une/carte-a-la-une-les-damnes-de-la-mer</a></p>
+</div>
+<div id="ref-lambert2015nostrum">
+<p>Lambert, N. (2015). Mare Nostrum. <em>Les cahiers de de santé publique et de protection sociale</em>, <em>16</em>.</p>
+</div>
+<div id="ref-lambert2015mobile">
+<p>Lambert, N., &amp; Clochard, O. (2015). Mobile and Fatal: The EU Borders. Dans <em>Borderities and the Politics of Contemporary Mobile Borders</em> (pp. 119‑137). (S.l.): Springer.</p>
+</div>
+<div id="ref-lambert2015comprendre">
+<p>Lambert, N., Ysebaert, R., &amp; Zanin, C. (2015). Comprendre le territoire européen. Deux outils cartographiques à l’appui de la réflexion en aménagement du territoire. <em>L’information géographique</em>, <em>79</em>(1), 45‑54.</p>
+</div>
+<div id="ref-beckouche2014europe">
+<p>Beckouche, P., Besnard, P., Grasland, C., Lambert, N., Pecout, H., Yann, R., &amp; Christine, Z. (2014). Les enjeux de l’élection européenne carte sur table. Le nouvel observateur.</p>
+</div>
+<div id="ref-lambert2013espon">
+<p>Lambert, N., &amp; Zanin, C. (2013). <em>Espon cartographic language</em>. ESPON.</p>
+</div>
+<div id="ref-cunty2012premiers">
+<p>Cunty, C., Ribardière, A., MAS, A., Lizzi, L., &amp; Lambert, N. (2012). Premiers pas vers une proposition de sémiologie graphique animée. Un outil d’expérimentation. <em>Cartes &amp; géomatique</em>, (211), 21‑31.</p>
+</div>
+<div id="ref-lambert2012openstreetmap">
+<p>Lambert, N., &amp; Zanin, C. (2012). OpenStreetMap: collaborer pour faire des cartes. <em>Mappemonde</em>, <em>107</em>(3).</p>
+</div>
+<div id="ref-ysebaert2012hyperatlas">
+<p>Ysebaert, R., Lambert, N., Grasland, C., Le Rubrus, B., Villanova-Oliver, M., Gensel, J., &amp; Plumejeaud, C. (2012). HyperAtlas, un outil scientifique au service du débat politique-Application à la politique de cohésion de l’Union Européenne.</p>
+</div>
+<div id="ref-zanin2012multirep">
+<p>Zanin, C., &amp; Lambert, N. (2012). La multi représentation cartographique. <em>Le Monde des cartes, revue du Comité Français de Cartographie</em>, <em>112</em>.</p>
+</div>
+<div id="ref-dao2011world">
+<p>Dao, H., De Bono, A., Grasland, C., Lambert, N., &amp; Ysebaert, R. (2011). <em>World database: Global data for the ESPON Database</em>. ESPON.</p>
+</div>
+<div id="ref-didelon2011world">
+<p>Didelon, C., Ruffray, S. de, Boquet, M., &amp; Lambert, N. (2011). A world of interstices: A fuzzy logic approach to the analysis of interpretative maps. <em>The Cartographic Journal</em>, <em>48</em>(2), 100‑107.</p>
+</div>
+<div id="ref-grasland2011synthesis">
+<p>Grasland, C., Lambert, N., &amp; Giraud, T. (2011). <em>Country synthesis report, FP7 – EuroBroadMap, visions of europe in the world</em>. FP7.</p>
+</div>
+<div id="ref-lambert2010bilan">
+<p>Lambert, N. (2011). Le Bilan humain de l’Europe forteresse, regard cartographique. <em>Les cahiers de de santé publique et de protection sociale</em>, <em>1</em>.</p>
+</div>
+<div id="ref-riate2011europe">
+<p>RIATE. (2011). <em>The Territorial State and Perspectives of the European Union. Background document for the Territorial Agenda of the European Union 2020</em>. UMS RIATE.</p>
+</div>
+<div id="ref-ruffray2011enjeux">
+<p>Ruffray, S. de, Hamez, G., Grasland, C., Lambert, N., Hamm, A., &amp; Gallet-Moron, E. (2011). Enjeux des territoires frontaliers à l’échelle nationale. Vers la détermination et la délimitation de pôles transfrontaliers. <em>Francia: ums riate, datar</em>.</p>
+</div>
+<div id="ref-zanin2011guide">
+<p>Zanin, C., Lambert, N., &amp; Ysebaert, R. (2011). <em>Mapping guide, cartography for ESPON Projects</em>. ESPON.</p>
+</div>
+<div id="ref-grasland2010espon">
+<p>Grasland, C., &amp; Gensel, J. (2010). ESPON 2013 Database. <em>Final Report, December</em>.</p>
+</div>
+<div id="ref-grasland2008shrinking">
+<p>Grasland, C., Ysebaert, R., Corminboeuf, B., Gaubert, N., Lambert, N., Salmon, I., … others. (2008). Shrinking regions: A paradigm shift in demography and territorial development. European Parliament.</p>
+</div>
+<div id="ref-richard2008mapping">
+<p>Richard, Y. (2008). Mapping Territorial Cohesion. Illustration of the Themes addressed by the French Presidency of the European Union in the Field of Territorial Cohesion and the Future of Cohesion Policy.</p>
+</div>
+<div id="ref-dubois2007regional">
+<p>Dubois, A., Gløersen, E., Lähteenmäki-Smith, K., Damsgaard, O., Grasland, C., Ysebaert, R., … others. (2007). Regional disparities and cohesion: what strategies for the future. <em>Brussels, European Parliament</em>, <em>109</em>.</p>
+</div>
+<div id="ref-grasland2007europe">
+<p>Grasland, C., &amp; Beckouche, P. (2007). <em>Europe in the World: Territorial Evidence and visions</em>. (S.l.): Univerza v Ljubljani, Ekonomska fakulteta.</p>
+</div>
+<div id="ref-grasland2006europe">
+<p>Grasland, C., &amp; Didelon, C. (2006). Europe in the World. ESPON.</p>
+</div>
+<div id="ref-grasland2006modifiable">
+<p>Grasland, C., &amp; Madelin, M. (2006). The Modifiable Areas Unit Problem. ESPON 3.4. 3 Final Report. Luxembourg: ESPON.</p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

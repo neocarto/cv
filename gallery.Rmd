@@ -1,0 +1,63 @@
+---
+title: "Gallerie"
+output: 
+  html_document: 
+    number_sections: no
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+<br/>
+
+<center>
+
+[![](img/gallery/2021_isochrones.png)](https://observablehq.com/@neocartocnrs/paris-by-road-osrm)
+[![](img/gallery/2021_Bars&Pubs.png)](https://observablehq.com/@neocartocnrs/bars-pubs-in-paris)
+[![](img/gallery/2021_WorldOceanDay.png)](https://www.humanite.fr/la-france-cest-94-deau-la-preuve-avec-notre-carte-interactive-709949)
+[![](img/gallery/2021_WorldVoronoi.png)](https://observablehq.com/@neocartocnrs/world-grids)
+[![](img/gallery/2021_LesMilliardaires.png)](https://observablehq.com/@neocartocnrs/countries-vs-billionaires)
+[![](img/gallery/2021_Population.png)](https://observablehq.com/@neocartocnrs/d3-contour-and-world-population)
+[![](img/gallery/2021_Discontinuities.png)](https://observablehq.com/@neocartocnrs/mapping-discontinuities)
+[![](img/gallery/2021_LineMap.png)](https://observablehq.com/@neocartocnrs/world-elevation-line-map)
+[![](img/gallery/2021_ElevationScan.png)](https://observablehq.com/@neocartocnrs/elevation)
+[![](img/gallery/2021_DotDensityMap.png)](https://observablehq.com/@neocartocnrs/dotdensity-map)
+[![](img/gallery/2021_Projections.png)](https://observablehq.com/@neocartocnrs/the-organization-of-cartographers-for-social-equality)
+[![](img/gallery/2021_VaccinsDépartements.png)](https://observablehq.com/@neocartocnrs/vaccination-against-covid-19-in-france)
+[![](img/gallery/2021_VaccinsFrance_1.png)](https://observablehq.com/@neocartocnrs/vaccination-in-france-by-age-group)
+[![](img/gallery/2021_MissingMigrants.png)](https://observablehq.com/@neocartocnrs/49394-deaths-in-migration-in-europes-neighbourhood-1993-20)
+[![](img/gallery/2021_Vaccins.png)](https://neocarto.hypotheses.org/12308)
+[![](img/gallery/2020_Covid19_bymonths.png)](https://www.humanite.fr/les-effets-du-covid-sur-votre-region-depuis-mars-regard-de-cartographe-1-697121)
+[![](img/gallery/2020_MissingMigrants.png)](https://analytics.huma-num.fr/Nicolas.Lambert/theborderkills/)
+[![](img/gallery/2020_Passeports.png)](https://neocarto.hypotheses.org/11580)
+[![](img/gallery/2020_Geoid.png)](https://www.youtube.com/watch?v=2xVNvXb6N6g)
+[![](img/gallery/2020_Covid19_dots.png)](https://gitlab.huma-num.fr/nlambert/covid19/-/raw/master/maps/rea/rea.mp4)
+[![](img/gallery/2020_Covid19_smooth.png)](https://gitlab.huma-num.fr/nlambert/covid19/-/raw/master/maps/smooth/smooth.mp4)
+[![](img/gallery/2020_MigrExplorer_1.png)](https://analytics.huma-num.fr/Nicolas.Lambert/migrexplorer/)
+[![](img/gallery/2020_MigrExplorer_2.png)](https://analytics.huma-num.fr/Nicolas.Lambert/migrexplorer2/)
+[![](img/gallery/2020_MigrExplorer_3.png)](https://analytics.huma-num.fr/Nicolas.Lambert/migrexplorer3/)
+[![](img/gallery/2020_Covid19_Choro.png)](https://neocarto.hypotheses.org/11372)
+[![](img/gallery/2020_Covid19_Monde.png)](https://neocarto.hypotheses.org/11327)
+[![](img/gallery/2020_NuitDebout.png)](https://neocarto.hypotheses.org/11145)
+[![](img/gallery/2020_PopLinks.png)](https://analytics.huma-num.fr/Nicolas.Lambert/poplinks/)
+[![](img/gallery/2020_Calais.png)](https://neocarto.github.io/calais/en/)
+[![](img/gallery/2020_Dorling.png)](https://observablehq.com/@neocartocnrs/dorling-cartogram)
+[![](img/gallery/2019_Requins.png)](https://youtu.be/QkQaUp2_UI4)
+[![](img/gallery/2019_MapQuote.png)](https://neocarto.github.io/mapquote/)
+[![](img/gallery/2019_RStats_Rideaudefer.png)](https://neocarto.github.io/ironcurtain/ironcurtain.html)
+[![](img/gallery/2019_Smooth.png)](https://neocarto.github.io/noborder/)
+[![](img/gallery/2019_Cameras.png)](https://neocarto.github.io/bigbrother/index.html)
+[![](img/gallery/2019_Manif.png)](https://neocarto.github.io/manif5dec/)
+[![](img/gallery/2019_PolarProjection.png)](https://youtu.be/AC6QhqpXJ8c/)
+[![](img/gallery/2018_Migrations_mensonge.png)](https://youtu.be/uicwYbendUk)
+[![](img/gallery/2018_Rstats_Cartography_Setes.png)](https://riatelab.github.io/anfdataviz/)
+[![](img/gallery/2018_Camps.png)](https://neocarto.github.io/closethecamps/)
+
+
+
+</center>
+
+<br/>
+
+<center>D'autres cartes et outils interactifs sont à retrouver sur le blog [Neocarto](https://neocarto.hypotheses.org/author/neocarto) ou sur mon [notebook Observable](https://observablehq.com/@neocartocnrs?tab=notebooks).</center>
+

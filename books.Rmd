@@ -1,0 +1,44 @@
+---
+title: "Livres & Atlas"
+output: 
+  html_document: 
+    number_sections: false
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+<br/>
+
+# En tant qu'auteur principal
+
+<br/>
+
+|   |   |   |
+|---|---|---|
+| [![](img/pictures/handbook.png)](https://www.taylorfrancis.com/books/9780429291968)| [![](img/pictures/MadMaps.png)](https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde-9782200625825)| [![](img/pictures/manuel.png)](https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856)  |
+
+
+Lambert, N., & Zanin, C. (2020). Practical Handbook of Thematic Cartography: Principles, Methods, and Applications. (S.l.): CRC Press. https://www.taylorfrancis.com/books/978042929196
+
+Lambert, N., & Zanin, C. (2019). Mad Maps – L’atlas qui va changer votre vision du Monde. (S.l.): Armand Colin. https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde
+
+Lambert, N., & Zanin, C. (2016). Manuel de cartographie: principes, méthodes, applications. (S.l.): Armand Colin. https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856
+
+<br/>
+
+# Contributions majeures et/ou activités de coordination (cartographie)
+
+<br/>
+
+|   |   |   |   |
+|---|---|---|---|
+| [![](img/pictures/migreurop_2019.png)](https://www.routledge.com/The-Atlas-of-Migration-in-Europe-A-Critical-Geography-of-Migration-Policies/igreurop/p/book/9781138392861)  | [![](img/pictures/migreurop_2017.png)](https://www.armand-colin.com/atlas-des-migrants-en-europe-3e-ed-approches-critiques-des-politiques-migratoires-9782200616854)  | [![](img/pictures/migreurop_2013.png)](http://www.migreurop.org/article2317.html?lang=fr)  |  [![](img/pictures/migreurop_2012.png)](http://www.migreurop.org/article2271.html?lang=fr) |
+|  [![](img/pictures/shrinking.png)](https://www.lavoisier.fr/livre/genie-civil-BTP/villes-et-regions-europeennes-en-decroissance/baron/descriptif-9782746231108) | [![](img/pictures/europedanslemonde.png)](https://www.leslibraires.fr/livre/1092272-atlas-de-l-europe-dans-le-monde-collectif-la-documentation-francaise)  |  ![](img/pictures/blank.png)  |   ![](img/pictures/blank.png) |
+
+<!-- # Contributions mineures (cartes ou textes) -->
+
+<!-- |   |   |   |   | -->
+<!-- |---|---|---|---| -->
+<!-- | [![](img/pictures/migreurop_2009.png)](http://www.migreurop.org/article1478.html?lang=fr)  |  ![](img/pictures/blank.png) |  ![](img/pictures/blank.png) |  ![](img/pictures/blank.png) | -->
+<!-- |   |   |   |   | -->

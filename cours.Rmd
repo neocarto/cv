@@ -1,0 +1,89 @@
+---
+title: "Enseignements & formations"
+output: 
+  html_document: 
+    number_sections: no
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+## 2020 – 2021
+
+[CM – 3 heure] Des cartes : pourquoi? comment? , atelier des master 1 de l’URMIS « de l’anthropologie visuelle à l’hypermédia
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+## 2019 – 2020
+
+[CM – 3 heure] Des cartes : pourquoi? comment? , atelier des master 1 de l’URMIS « de l’anthropologie visuelle à l’hypermédia
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+## 2018 – 2019
+
+[ANF] Action nationale de formation sur la visualisation de données en SHS Sète, novembre 2018 (membre du comité d’organisation, coordination scientifique)
+
+[CM – 2 heure] Cartographie critique, Licence III géographie université paris VII.
+
+[CM – 2 heure] Migrations, frontières, enfermement, Licence III géographie université paris VII.
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+[JOURNÉE D’ETUDE] Cartographie avec Magrit, Les journées data-shs, Lille, décembre 2018.
+
+## 2017 – 2018
+
+[CM – 2 heure] Cartographie critique, Licence III géographie université paris VII.
+
+[CM – 2 heure] Migrations, frontières, enfermement, Licence III géographie université paris VII.
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+[JOURNÉE D’ETUDE] Cartographie avec Magrit, Les journées data-shs, Lille.
+
+[JOURNÉE D’ETUDE] Cartographie reproductible, Séminaire Recherche reproductible et représentation des données, ENS Lyon, mars 2018.
+
+[ATELIER] Cartographie avec Magrit, 4e colloque international du CIST, représenter les territoires, Rouen, mars 2018
+
+## 2016 – 2017
+
+[CM – 2 heure] Le pouvoir contestataire des cartes, Licence III géographie université paris VII.
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+[JOURNÉE D’ETUDE] Engagement et recherche : la publication scientifique comme outil de dé-construction des discours politiques, master MIRI,  université paris VII.
+
+[FORMATION – 3 jours] Atelier de cartographie expérimentale, Strasbourg, mars 2017
+
+## 2015 – 2016
+
+[CM – 2 heure] Le pouvoir contestataire des cartes, Licence III géographie université paris VII.
+
+[CI – 21 heures] Techniques et outils option information géographique, Master I géographie université paris VII.
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+## 2014 – 2015
+
+[CM – 2 heure] Le pouvoir contestataire des cartes, Licence III géographie université paris VII.
+
+[TCI- 21 heures] Techniques et outils option information géographique, Master I géographie université paris VII.
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
+## 2013 – 2014
+
+[CI – 21 heures] Techniques et outils option cartographie , Master I géographie université paris VII.
+
+[CI – 3 heures] Cours sur les anamorphoses et la cartographie transformationnelle, Master II Carthageo.
+
+[FORMATION – 5 jours] La cartographie sous R, Laboratoire Syfacte, Sfax, Tunisie
+
+## 2013 – 2013
+
+[CI – 3 heures] Les anamorphoses et la cartographie transformationnelle , Master II Carthageo.
+
+## 2011 – 2012
+
+[CI – 3 heures] Les anamorphoses cartographiques, Master II Carthageo.

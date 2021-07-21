@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Gallerie</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Accueil
+  </a>
+</li>
+<li>
+  <a href="books.html">Livres</a>
+</li>
+<li>
+  <a href="publis.html">Publications</a>
+</li>
+<li>
+  <a href="communications.html">Communications</a>
+</li>
+<li>
+  <a href="cours.html">Enseignement</a>
+</li>
+<li>
+  <a href="gallery.html">Gallerie</a>
+</li>
+<li>
+  <a href="videos.html">Vidéos</a>
+</li>
+<li>
+  <a href="divers.html">Divers</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://gitlab.huma-num.fr/nlambert">
+    <span class="fa fa-gitlab"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Gallerie</h1>
+
+</div>
+
+
+<p><br/></p>
+<center>
+<p><a href="https://observablehq.com/@neocartocnrs/paris-by-road-osrm"><img src="img/gallery/2021_isochrones.png" /></a> <a href="https://observablehq.com/@neocartocnrs/bars-pubs-in-paris"><img src="img/gallery/2021_Bars&amp;Pubs.png" /></a> <a href="https://www.humanite.fr/la-france-cest-94-deau-la-preuve-avec-notre-carte-interactive-709949"><img src="img/gallery/2021_WorldOceanDay.png" /></a> <a href="https://observablehq.com/@neocartocnrs/world-grids"><img src="img/gallery/2021_WorldVoronoi.png" /></a> <a href="https://observablehq.com/@neocartocnrs/countries-vs-billionaires"><img src="img/gallery/2021_LesMilliardaires.png" /></a> <a href="https://observablehq.com/@neocartocnrs/d3-contour-and-world-population"><img src="img/gallery/2021_Population.png" /></a> <a href="https://observablehq.com/@neocartocnrs/mapping-discontinuities"><img src="img/gallery/2021_Discontinuities.png" /></a> <a href="https://observablehq.com/@neocartocnrs/world-elevation-line-map"><img src="img/gallery/2021_LineMap.png" /></a> <a href="https://observablehq.com/@neocartocnrs/elevation"><img src="img/gallery/2021_ElevationScan.png" /></a> <a href="https://observablehq.com/@neocartocnrs/dotdensity-map"><img src="img/gallery/2021_DotDensityMap.png" /></a> <a href="https://observablehq.com/@neocartocnrs/the-organization-of-cartographers-for-social-equality"><img src="img/gallery/2021_Projections.png" /></a> <a href="https://observablehq.com/@neocartocnrs/vaccination-against-covid-19-in-france"><img src="img/gallery/2021_VaccinsD%C3%A9partements.png" /></a> <a href="https://observablehq.com/@neocartocnrs/vaccination-in-france-by-age-group"><img src="img/gallery/2021_VaccinsFrance_1.png" /></a> <a href="https://observablehq.com/@neocartocnrs/49394-deaths-in-migration-in-europes-neighbourhood-1993-20"><img src="img/gallery/2021_MissingMigrants.png" /></a> <a href="https://neocarto.hypotheses.org/12308"><img src="img/gallery/2021_Vaccins.png" /></a> <a href="https://www.humanite.fr/les-effets-du-covid-sur-votre-region-depuis-mars-regard-de-cartographe-1-697121"><img src="img/gallery/2020_Covid19_bymonths.png" /></a> <a href="https://analytics.huma-num.fr/Nicolas.Lambert/theborderkills/"><img src="img/gallery/2020_MissingMigrants.png" /></a> <a href="https://neocarto.hypotheses.org/11580"><img src="img/gallery/2020_Passeports.png" /></a> <a href="https://www.youtube.com/watch?v=2xVNvXb6N6g"><img src="img/gallery/2020_Geoid.png" /></a> <a href="https://gitlab.huma-num.fr/nlambert/covid19/-/raw/master/maps/rea/rea.mp4"><img src="img/gallery/2020_Covid19_dots.png" /></a> <a href="https://gitlab.huma-num.fr/nlambert/covid19/-/raw/master/maps/smooth/smooth.mp4"><img src="img/gallery/2020_Covid19_smooth.png" /></a> <a href="https://analytics.huma-num.fr/Nicolas.Lambert/migrexplorer/"><img src="img/gallery/2020_MigrExplorer_1.png" /></a> <a href="https://analytics.huma-num.fr/Nicolas.Lambert/migrexplorer2/"><img src="img/gallery/2020_MigrExplorer_2.png" /></a> <a href="https://analytics.huma-num.fr/Nicolas.Lambert/migrexplorer3/"><img src="img/gallery/2020_MigrExplorer_3.png" /></a> <a href="https://neocarto.hypotheses.org/11372"><img src="img/gallery/2020_Covid19_Choro.png" /></a> <a href="https://neocarto.hypotheses.org/11327"><img src="img/gallery/2020_Covid19_Monde.png" /></a> <a href="https://neocarto.hypotheses.org/11145"><img src="img/gallery/2020_NuitDebout.png" /></a> <a href="https://analytics.huma-num.fr/Nicolas.Lambert/poplinks/"><img src="img/gallery/2020_PopLinks.png" /></a> <a href="https://neocarto.github.io/calais/en/"><img src="img/gallery/2020_Calais.png" /></a> <a href="https://observablehq.com/@neocartocnrs/dorling-cartogram"><img src="img/gallery/2020_Dorling.png" /></a> <a href="https://youtu.be/QkQaUp2_UI4"><img src="img/gallery/2019_Requins.png" /></a> <a href="https://neocarto.github.io/mapquote/"><img src="img/gallery/2019_MapQuote.png" /></a> <a href="https://neocarto.github.io/ironcurtain/ironcurtain.html"><img src="img/gallery/2019_RStats_Rideaudefer.png" /></a> <a href="https://neocarto.github.io/noborder/"><img src="img/gallery/2019_Smooth.png" /></a> <a href="https://neocarto.github.io/bigbrother/index.html"><img src="img/gallery/2019_Cameras.png" /></a> <a href="https://neocarto.github.io/manif5dec/"><img src="img/gallery/2019_Manif.png" /></a> <a href="https://youtu.be/AC6QhqpXJ8c/"><img src="img/gallery/2019_PolarProjection.png" /></a> <a href="https://youtu.be/uicwYbendUk"><img src="img/gallery/2018_Migrations_mensonge.png" /></a> <a href="https://riatelab.github.io/anfdataviz/"><img src="img/gallery/2018_Rstats_Cartography_Setes.png" /></a> <a href="https://neocarto.github.io/closethecamps/"><img src="img/gallery/2018_Camps.png" /></a></p>
+</center>
+<p><br/></p>
+<center>
+D’autres cartes et outils interactifs sont à retrouver sur le blog <a href="https://neocarto.hypotheses.org/author/neocarto">Neocarto</a> ou sur mon <a href="https://observablehq.com/@neocartocnrs?tab=notebooks">notebook Observable</a>.
+</center>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

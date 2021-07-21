@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Nicolas Lambert</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Accueil
+  </a>
+</li>
+<li>
+  <a href="books.html">Livres</a>
+</li>
+<li>
+  <a href="publis.html">Publications</a>
+</li>
+<li>
+  <a href="communications.html">Communications</a>
+</li>
+<li>
+  <a href="cours.html">Enseignement</a>
+</li>
+<li>
+  <a href="gallery.html">Gallerie</a>
+</li>
+<li>
+  <a href="videos.html">Vidéos</a>
+</li>
+<li>
+  <a href="divers.html">Divers</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://gitlab.huma-num.fr/nlambert">
+    <span class="fa fa-gitlab"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Nicolas Lambert</h1>
+
+</div>
+
+
+<p><a href ="https://twitter.com/neocartocnrs"><img src ="img/icones/logo-rond-twitter.png" height ="30px"></img></a> <a href ="https://orcid.org/0000-0003-4976-6560"><img src ="img/icones/orcid-logo.png" height ="30px"></img></a> <a href ="https://neocarto.hypotheses.org/author/neocarto"><img src ="img/icones/hypothese.png" height ="30px"></img></a> <a href ="https://observablehq.com/@neocartocnrs"><img src ="img/icones/qq4vXsM7-80x80.png" height ="30px"></img></a> <a href ="https://gitlab.huma-num.fr/nlambert"><img src ="img/icones/GitLab_Logo.svg-300x277.png" height ="30px"></img></a> <a href ="https://github.com/neocarto"><img src ="img/icones/github.png" height ="30px"></img></a> <a href ="https://www.youtube.com/channel/UCoZLDHWvG1cp4h6IH4nIegQ/videos"><img src ="img/icones/youtube.png" height ="30px"></img></a></p>
+<div id="ingénieur-de-recherche-cnrs-en-sciences-de-linformation-géographique-cnrs-research-engineer-in-geographical-information-sciences" class="section level2">
+<h2>Ingénieur de recherche CNRS en sciences de l’information géographique<br/> CNRS Research Engineer in Geographical Information Sciences</h2>
+<div id="lauréat-du-cristal-du-cnrs-2011" class="section level4">
+<h4><a href="http://www.cnrs.fr/sites/default/files/download-file/LambertN.pdf">Lauréat du CRISTAL du CNRS (2011)</a></h4>
+</div>
+<div id="animateur-du-carnet-de-recherche-neocarto" class="section level4">
+<h4><a href="https://neocarto.hypotheses.org/author/neocarto">Animateur du carnet de recherche NEOCARTO</a></h4>
+<p><a href="mailto:nicolas.lambert@cnrs.fr">nicolas.lambert@cnrs.fr</a></p>
+<br/>
+<table width = "100%">
+<tr>
+<td width="30%">
+<img src ="img/pictures/comica1604665085925.png"></img>
+</td>
+<td width="2%">
+</td>
+<td>
+<strong>FR</strong> - Nicolas Lambert est ingénieur de recherche en sciences de l’information géographique au CNRS. Au sein de l’UMS RIATE, il développe tout aussi bien des cartes interactives et animées avec R et D3js que des cartes d’édition statiques. Membre du réseau Migreurop et du Comité Français de Cartographie, il a participé à la réalisation de plusieurs ouvrages comme l’Atlas de l’Europe dans le monde (2008), l’Atlas des migrants en Europe (2009 , 2012, 2017), le Manuel de Cartographie (2016, publié en anglais en 2020) et Mad Maps (2019). Il enseigne la cartographie à l’université de Paris. <br/><br/><strong>EN</strong> - Nicolas Lambert is a research engineer in geographic information sciences at the CNRS. Within the UMS RIATE, he designs interactive and animated maps with R and D3js as well as static editorial maps. Member of the Migreurop network and of the French Committee of Cartography, he has participated in the realization of several works such as the Atlas of Europe in the World (2008), the Atlas of Migrants in Europe (2009, 2012, 2017), the Cartography Manual (2016, published in English in 2020) and Mad Maps (2019). He teaches cartography at the University of Paris.
+</td>
+</tr>
+</table>
+</div>
+<div id="parcours" class="section level4">
+<h4><ins>Parcours</ins></h4>
+<p><em><strong>2000</strong> : Entrée à GeoConcept SA. <strong>2002</strong> : Entrée au Conseil Général de Seine-Saint-Denis. <strong>2004</strong> : Entrée au CNRS sur concours externe (Ingénieur d’études) à l’UMS 2414 RIATE. 2008 : Lauréat du concours de <a href="http://mappemonde-archive.mgm.fr/num20/fig08/fig08401.html#:~:text=Mourir%20aux%20fronti%C3%A8res%20de%20l&#39;Europe&amp;text=R%C3%A9alis%C3%A9%20pour%20la%2019e,%2D%20Europe%20in%20the%20World">posters scientifiques</a> du FIG de Saint-Dié. <strong>2009</strong> : Co-lauréat du <a href="https://blog.espci.fr/actualites/files/2009/11/EFort-PrixDiderot2009.pdf">Prix Diderot Innovation</a> de l’université Paris 7. <strong>2011</strong> : Lauréat du <a href="http://www.cnrs.fr/sites/default/files/download-file/LambertN.pdf">Cristal du CNRS</a>. <strong>2015</strong> : Classé premier au concours interne d’ingénieur de recherche. <strong>2016</strong> : Publication d’un <a href="https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856">Manuel de Cartographie</a> aux éditions Armand Colin. <strong>2019</strong> : Publication de <a href="https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde-9782200625825">Mad Maps</a> aux éditions Armand Colin. <strong>2020</strong> : Publication de <a href="https://www.taylorfrancis.com/books/practical-handbook-thematic-cartography-nicolas-lambert-christine-zanin/10.1201/9780429291968">Practical Handbook of Thematic Cartography</a> aux éditions CRC Press. <strong>2021</strong> : Promu ingénieur de recherche 1e classe. <strong>2021</strong> : Lauréat du concours “<a href="https://observablehq.com/@observablehq/announcing-the-black-history-dataviz-contest-winners">Black History DataViz</a>”.</em></p>
+<p><em>Voir aussi <a href="https://decryptageo.fr/un-cartographe-engage" class="uri">https://decryptageo.fr/un-cartographe-engage</a> &amp; <a href="https://www.humanite.fr/etiquettes/regard-de-cartographe">Regard de cartographe (pour l’Humanité.fr)</a></em></p>
+<div align="right">
+<a href ="https://riate.cnrs.fr/"><img src ="img/pictures/riate_red_high.png" height ="30px"></img></a>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

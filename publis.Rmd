@@ -1,0 +1,15 @@
+---
+title: "Publications"
+bibliography: biblio/publications.bib
+csl: biblio/style.csl
+output: 
+  html_document: 
+    number_sections: false
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+---
+nocite: '@*'
+---

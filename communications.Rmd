@@ -1,0 +1,15 @@
+---
+title: "Communications"
+bibliography: biblio/communications.bib
+csl: biblio/style.csl
+output: 
+  html_document: 
+    number_sections: no
+    toc: no
+editor_options: 
+  chunk_output_type: console
+---
+
+---
+nocite: '@*'
+---

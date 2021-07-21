@@ -1,0 +1,33 @@
+name: "riate"
+navbar:
+  left:
+    - text: "Accueil"
+      icon: fa-home
+      href: index.html
+    - text: "Livres"
+      href: books.html
+    - text: "Publications"
+      href: publis.html
+    - text: "Communications"
+      href: communications.html
+    - text: "Enseignement"
+      href: cours.html
+    - text: "Gallerie"
+      href: gallery.html
+    - text: "Vidéos"
+      href: videos.html
+    - text: "Divers"
+      href: divers.html
+  right:
+    - icon: fa-gitlab
+      href: https://gitlab.huma-num.fr/nlambert
+output: 
+  html_document:
+    toc_float: TRUE  
+    theme: united
+    highlight: tango
+    include:
+      after_body: footer.html
+    number_sections: yes
+    exclude: [data-raw, data]
+    css: css/styles.css
