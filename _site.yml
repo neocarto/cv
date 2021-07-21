@@ -1,4 +1,5 @@
-name: "riate"
+name: "My CV"
+output_dir: "docs"
 navbar:
   left:
     - text: "Accueil"
@@ -19,8 +20,8 @@ navbar:
     - text: "Divers"
       href: divers.html
   right:
-    - icon: fa-gitlab
-      href: https://gitlab.huma-num.fr/nlambert
+    - icon: fa-github
+      href: https://github.com/neocarto/cv
 output: 
   html_document:
     toc_float: TRUE  
