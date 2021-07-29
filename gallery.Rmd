@@ -11,7 +11,7 @@ editor_options:
 <br/>
 
 <center>
-
+[![](img/gallery/2021_ExtrudedMap.png)](https://observablehq.com/@neocartocnrs/lets-make-an-extruded-map)
 [![](img/gallery/2021_isochrones.png)](https://observablehq.com/@neocartocnrs/paris-by-road-osrm)
 [![](img/gallery/2021_Bars&Pubs.png)](https://observablehq.com/@neocartocnrs/bars-pubs-in-paris)
 [![](img/gallery/2021_WorldOceanDay.png)](https://www.humanite.fr/la-france-cest-94-deau-la-preuve-avec-notre-carte-interactive-709949)
