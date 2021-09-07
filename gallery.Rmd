@@ -11,6 +11,10 @@ editor_options:
 <br/>
 
 <center>
+
+
+[![](img/gallery/2021_RectCartogram.png)](https://observablehq.com/@neocartocnrs/rectangle-cartogram)
+[![](img/gallery/2021_DemersCartogram.png)](https://observablehq.com/@neocartocnrs/dorling-vs-demers)
 [![](img/gallery/2021_ExtrudedMap.png)](https://observablehq.com/@neocartocnrs/lets-make-an-extruded-map)
 [![](img/gallery/2021_isochrones.png)](https://observablehq.com/@neocartocnrs/paris-by-road-osrm)
 [![](img/gallery/2021_Bars&Pubs.png)](https://observablehq.com/@neocartocnrs/bars-pubs-in-paris)
