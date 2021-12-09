@@ -8,9 +8,17 @@ editor_options:
   chunk_output_type: console
 ---
 
+## 2021 – 2022
+
+[CM - 2 heures] Observable pour les cartographes, Master 2 Carthagéo
+
+[CM – 3 heures] Des cartes : pourquoi? comment?, atelier des master 1 de l’URMIS « de l’anthropologie visuelle à l’hypermédia
+
+[CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
+
 ## 2020 – 2021
 
-[CM – 3 heure] Des cartes : pourquoi? comment? , atelier des master 1 de l’URMIS « de l’anthropologie visuelle à l’hypermédia
+[CM – 3 heures] Des cartes : pourquoi? comment?, atelier des master 1 de l’URMIS « de l’anthropologie visuelle à l’hypermédia
 
 [CI – 21 heures] Techniques et outils option cartographie, Master I géographie université paris VII.
 

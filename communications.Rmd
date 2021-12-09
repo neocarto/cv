@@ -1,7 +1,7 @@
 ---
 title: "Communications"
 bibliography: biblio/communications.bib
-csl: biblio/style.csl
+csl: biblio/cardiff-university-vancouver.csl
 output: 
   html_document: 
     number_sections: no

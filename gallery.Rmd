@@ -57,8 +57,6 @@ editor_options:
 [![](img/gallery/2018_Rstats_Cartography_Setes.png)](https://riatelab.github.io/anfdataviz/)
 [![](img/gallery/2018_Camps.png)](https://neocarto.github.io/closethecamps/)
 
-
-
 </center>
 
 <br/>
