@@ -13,6 +13,8 @@ editor_options:
 <center>
 
 
+[![](img/gallery/2021_Calais.jpg)](https://www.humanite.fr/en-debat/regard-de-cartographe/une-carte-pour-denoncer-le-traitement-fait-aux-migrants-dans-le)
+[![](img/gallery/2021_Maddison.png)](https://www.humanite.fr/les-etres-humains-pourraient-tous-vivre-bien-la-preuve-en-cartes-728108)
 [![](img/gallery/2021_RectCartogram.png)](https://observablehq.com/@neocartocnrs/rectangle-cartogram)
 [![](img/gallery/2021_DemersCartogram.png)](https://observablehq.com/@neocartocnrs/dorling-vs-demers)
 [![](img/gallery/2021_ExtrudedMap.png)](https://observablehq.com/@neocartocnrs/lets-make-an-extruded-map)
