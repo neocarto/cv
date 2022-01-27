@@ -11,7 +11,7 @@ editor_options:
 <br/>
 
 <center>
-
+[![](img/gallery/2022_spikes.png)](https://observablehq.com/@neocartocnrs/bertin-js-spikes)
 [![](img/gallery/2022_interactivgeoid.jpg)](https://www.humanite.fr/en-debat/regard-de-cartographe/la-terre-nest-pas-plate-mais-est-elle-vraiment-ronde-734821)
 [![](img/gallery/2021_Calais.jpg)](https://www.humanite.fr/en-debat/regard-de-cartographe/une-carte-pour-denoncer-le-traitement-fait-aux-migrants-dans-le)
 [![](img/gallery/2021_Maddison.png)](https://www.humanite.fr/les-etres-humains-pourraient-tous-vivre-bien-la-preuve-en-cartes-728108)
