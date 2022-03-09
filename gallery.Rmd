@@ -11,6 +11,7 @@ editor_options:
 <br/>
 
 <center>
+[![](img/gallery/2022_missingmigrants.png)](https://observablehq.com/@neocartocnrs/dead-and-missing-migrants-2014-2020)
 [![](img/gallery/2022_Cholera.png)](https://www.humanite.fr/sciences/le-cholera-la-biere-et-la-geographie-738368)
 [![](img/gallery/2022_dotcartogram.png)](https://observablehq.com/@neocartocnrs/bertin-js-dots-cartograms)
 [![](img/gallery/2022_spikes.png)](https://observablehq.com/@neocartocnrs/bertin-js-spikes)
