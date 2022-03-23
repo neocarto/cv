@@ -11,6 +11,7 @@ editor_options:
 <br/>
 
 <center>
+[![](img/gallery/2022_ukraine.png)](https://observablehq.com/@neocartocnrs/ukraine)
 [![](img/gallery/2022_SmoothInterpolations.png)](https://observablehq.com/@neocartocnrs/countries-and-population-flubber-interpolation)
 [![](img/gallery/2022_missingmigrants.png)](https://observablehq.com/@neocartocnrs/dead-and-missing-migrants-2014-2020)
 [![](img/gallery/2022_Cholera.png)](https://www.humanite.fr/sciences/le-cholera-la-biere-et-la-geographie-738368)
