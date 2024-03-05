@@ -23,49 +23,30 @@ const Cite = await require("https://bundle.run/citation-js@0.5.1");
 )
 ```
 
-
-
-# Liste des travaux
-
-
-
-
 ## Publications
-
-```js
-const style = view(Inputs.radio(["vancouver", "apa", "harvard1"], { value: "apa"}));
-```
-
 <div id = "pub"></div>
 
 <br/>
 
-### <ins>Communications</ins>
-
-```js
-const style2 = view(Inputs.radio(["vancouver", "apa", "harvard1"], { value: "apa"}));
-```
-
+## Communications
 <div id = "com"></div>
 
 
 
 ```js
 // Publications
-
 let div = document.getElementById('pub');
-div.innerHTML =publi.format("bibliography", {
+div.innerHTML +=publi.format("bibliography", {
     format: "html",
-    template: style,
-    lang: "fr-FR",
-    nosort:true
+    template: "apa",
+    lang: "fr-FR",nosort:true
   });
 // Communications
-let div2 = document.getElementById('com');
-div2.innerHTML =publi.format("bibliography", {
+let div = document.getElementById('com');
+div.innerHTML +=publi.format("bibliography", {
     format: "html",
-    template: style2,
-    lang: "fr-FR",
-    nosort:true
+    template: "apa",
+    lang: "fr-FR",nosort:true
   });
 ```
+
