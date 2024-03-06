@@ -1,18 +1,62 @@
 ---
-title: xxx
-toc: true
+title: Gallerie
 ---
 
+<style>
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  font-family: var(--sans-serif);
+  text-wrap: balance;
+  text-align: left;
+}
+
+.hero h1 {
+  margin: 2rem 0;
+  max-width: none;
+  font-size: 10vw;
+  font-weight: 700;
+  line-height: 1;
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h2 {
+  margin: 0;
+  max-width: 34em;
+  font-size: 20px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--theme-foreground-muted);
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 50px;
+
+
+  }
+}
+</style>
+
+
 ```js
+import {menu} from "./helpers/menu.js"
 import {previews} from "./helpers/preview.js"
 ```
 
+<div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
 
-# xxx
+```js
+menu("gallery")
+```
 
-# zzz
-
-# ccc
+# xxxx
 
 ```js
 previews([

@@ -10,7 +10,8 @@
 export default {
   title: "Nicolas Lambert",
   theme:"glacier",
-  pages: [
-    {name: "Liste des travaux", path: "/publi"},{name:"Livres",path:"/books"}, {name: "Gallerie", path:"/gallery"},{name: "Geovoz", path:"/geoviz"}
-  ]
+  // pages: [
+  //   {name: "Liste des travaux", path: "/publi"},{name:"Livres",path:"/books"}, {name: "Gallerie", path:"/gallery"},{name: "Geovoz", path:"/geoviz"}
+  // ]
+ pages: []
 };

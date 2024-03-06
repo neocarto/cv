@@ -2,6 +2,8 @@
 title: Activités
 ---
 
+<div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
+
 # Activités
 
 ### Médiation scientifique
