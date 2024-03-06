@@ -1,10 +1,10 @@
 export function menu(page) {
   const on = "style = 'background-color:#D75C48; color: white'";
   const off = "style = 'background-color:white'";
-  let content = `<div class="grid grid-cols-4" style="display: flex; align:left>`;
+  let content = `<div class="grid grid-cols-4" style="display: flex; align:left">`;
 
   if (page !== "home") {
-    content += `<div class="card" ${off}>Accueil</div>`;
+    content += `<a href ="index"><div class="card" ${off}>Accueil</div></a>`;
   }
   content += `<a href ="books"><div class="card" ${
     page == "books" ? on : off

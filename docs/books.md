@@ -1,53 +1,4 @@
----
-title: "TEST"
-toc: false
----
-
-<style>
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  font-family: var(--sans-serif);
-  text-wrap: balance;
-  text-align: left;
-}
-
-.hero h1 {
-  margin: 2rem 0;
-  max-width: none;
-  font-size: 10vw;
-  font-weight: 700;
-  line-height: 1;
-  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero h2 {
-  margin: 0;
-  max-width: 34em;
-  font-size: 20px;
-  font-style: initial;
-  font-weight: 500;
-  line-height: 1.5;
-  color: var(--theme-foreground-muted);
-}
-
-
-
-
-@media (min-width: 640px) {
-  .hero h1 {
-    font-size: 50px;
-
-
-  }
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css">
 
 ```js
 import {menu} from "./helpers/menu.js"
@@ -61,7 +12,6 @@ menu("books")
 
 <hr/>
 
-
 # En tant qu'auteur principal
 
 <div class="grid grid-cols-3">
@@ -70,6 +20,9 @@ menu("books")
   <div class="card"><img src ="images/manuel.png" width="100%">Lambert, N., & Zanin, C. (2016). Manuel de cartographie: principes, méthodes, applications. (S.l.): Armand Colin. https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856
 </div>
 </div>
+
+# Contributions majeures
+
 
 <div class="grid grid-cols-4" align = "center">
   <div class="card">2022<br/><br/><img src ="images/migreurop_2022.png" width="100%"></div>
