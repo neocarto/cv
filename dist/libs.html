@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Geotoolbox | Nicolas Lambert</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-glacier.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-glacier.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/helpers/menu.b407e1bb.js">
+<link rel="modulepreload" href="./_npm/geoviz@0.5.2/+esm.js">
+<link rel="modulepreload" href="./_npm/geotoolbox@2.0.3/+esm.js">
+<link rel="modulepreload" href="./_npm/bertin@1.8.5/+esm.js">
+<link rel="modulepreload" href="./_import/helpers/preview.09551182.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3@7.8.5/+esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-array/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-tile@1.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo-scale-bar@1.2.5/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/versor@0.2/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo-projection@4.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/statsbreaks@1.0.6/+esm.js">
+<link rel="modulepreload" href="./_npm/dicopal@0.6.4/+esm.js">
+<link rel="modulepreload" href="./_npm/topojson-server@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/geos-wasm@1.2.1/+esm.js">
+<link rel="modulepreload" href="./_npm/topojson-client@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/topojson-simplify@3.0.3/+esm.js">
+<link rel="modulepreload" href="./_npm/proj4@2.10.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/boolean-point-in-polygon@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/bbox@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/intersect@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/rbush@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/io/GeoJSONReader.js/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/io/GeoJSONWriter.js/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/operation/union/UnionOp.js/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/operation/buffer/BufferOp.js/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/random@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-axis@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-brush@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-chord@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-delaunay@6.0.4/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-dsv@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-fetch@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-hierarchy@3.1.2/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-polygon@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-random@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/+esm.js">
+<link rel="modulepreload" href="./_npm/wkt-parser@1.3.3/+esm.js">
+<link rel="modulepreload" href="./_npm/mgrs@1.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/invariant@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/meta@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/helpers@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/polygon-clipping@0.15.7/+esm.js">
+<link rel="modulepreload" href="./_npm/quickselect@2.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/delaunator@5.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/splaytree@3.1.2/+esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/+esm.js">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/AUS.geojson", {"name":"./data/AUS.geojson","mimeType":"application/geo+json","path":"./_file/data/AUS.f9eb88f5.geojson"});
+registerFile("./data/aussimpl.json", {"name":"./data/aussimpl.json","mimeType":"application/json","path":"./_file/data/aussimpl.d18b7081.json"});
+registerFile("./data/deaths.json", {"name":"./data/deaths.json","mimeType":"application/json","path":"./_file/data/deaths.abdaea04.json"});
+registerFile("./data/world.json", {"name":"./data/world.json","mimeType":"application/json","path":"./_file/data/world.0a51aaae.json"});
+
+define({id: "9eeaefe2", outputs: ["menu"], body: async () => {
+const {menu} = await import("./_import/helpers/menu.b407e1bb.js");
+
+return {menu};
+}});
+
+define({id: "95f9b2f9", inputs: ["menu","display"], body: async (menu,display) => {
+display(await(
+menu("libs")
+))
+}});
+
+define({id: "2e6326d5", outputs: ["k"], body: () => {
+let k
+//const world = FileAttachment("data/world.json").json()
+return {k};
+}});
+
+define({id: "3d5880f4", inline: true, inputs: ["simplify_k","display"], body: async (simplify_k,display) => {
+display(await(
+simplify_k
+))
+}});
+
+define({id: "39c1f63b", inline: true, inputs: ["resize","simplify","simplifyk","display"], body: async (resize,simplify,simplifyk,display) => {
+display(await(
+resize((width) => simplify(width, simplifyk))
+))
+}});
+
+define({id: "746a0291", inline: true, inputs: ["buffer_k","display"], body: async (buffer_k,display) => {
+display(await(
+buffer_k
+))
+}});
+
+define({id: "82361b7a", inline: true, inputs: ["bufferk","display"], body: async (bufferk,display) => {
+display(await(
+bufferk
+))
+}});
+
+define({id: "641f1970", inline: true, inputs: ["bubble_k","display"], body: async (bubble_k,display) => {
+display(await(
+bubble_k
+))
+}});
+
+define({id: "711fe5e2", inline: true, inputs: ["resize","bertin_bubble","bubblek","display"], body: async (resize,bertin_bubble,bubblek,display) => {
+display(await(
+resize((width) => bertin_bubble(width, bubblek))
+))
+}});
+
+define({id: "ef3604cf", inline: true, inputs: ["bertin_step","display"], body: async (bertin_step,display) => {
+display(await(
+bertin_step
+))
+}});
+
+define({id: "78ffc9a0", inline: true, inputs: ["resize","bertin_grid","bertinstep","display"], body: async (resize,bertin_grid,bertinstep,display) => {
+display(await(
+resize((width) => bertin_grid(width, bertinstep))
+))
+}});
+
+define({id: "3179e70d", inline: true, inputs: ["bertin_bandwidth","display"], body: async (bertin_bandwidth,display) => {
+display(await(
+bertin_bandwidth
+))
+}});
+
+define({id: "cbe3e859", inline: true, inputs: ["resize","bertin_smooth","bertinbandwidth","display"], body: async (resize,bertin_smooth,bertinbandwidth,display) => {
+display(await(
+resize((width) => bertin_smooth(width, bertinbandwidth))
+))
+}});
+
+define({id: "ce352801", inputs: ["FileAttachment"], outputs: ["viz","geo","bertin","previews","world","aus","aus2","deaths"], body: async (FileAttachment) => {
+const [viz, geo, bertin, {previews}] = await Promise.all([import("./_npm/geoviz@0.5.2/+esm.js"), import("./_npm/geotoolbox@2.0.3/+esm.js"), import("./_npm/bertin@1.8.5/+esm.js"), import("./_import/helpers/preview.09551182.js")]);
+const world = FileAttachment("data/world.json").json();
+const aus = FileAttachment("data/AUS.geojson").json();
+const aus2 = FileAttachment("data/aussimpl.json").json();
+const deaths = FileAttachment("data/deaths.json").json();
+return {viz,geo,bertin,previews,world,aus,aus2,deaths};
+}});
+
+define({id: "fbce633e", inline: true, inputs: ["resize","geoviz_globe","display"], body: async (resize,geoviz_globe,display) => {
+display(await(
+resize((width) => geoviz_globe(width))
+))
+}});
+
+define({id: "82143cdc", inline: true, inputs: ["resize","geoviz_tile","display"], body: async (resize,geoviz_tile,display) => {
+display(await(
+resize((width) => geoviz_tile(width))
+))
+}});
+
+define({id: "59a26482", inputs: ["viz","d3","world","aus","Inputs","Generators","geo","bertin","deaths","aus2","width"], outputs: ["geoviz_globe","geoviz_tile","geoviz_bubble","simplify_k","simplifyk","simplify","bubble_k","bubblek","bertin_bubble","bertin_step","bertinstep","bertin_grid","bertin_bandwidth","bertinbandwidth","bertin_smooth","buffer_k","bufferk","aussbuff","asyncbuff","buff"], body: (viz,d3,world,aus,Inputs,Generators,geo,bertin,deaths,aus2,width) => {
+// FUNCTIONS GEOVIZ
+
+function geoviz_globe(width){
+let svg = viz.create({projection:d3.geoOrthographic().rotate([-30,-30]), zoomable:"versor", width})
+svg.outline({ fill: viz.effect.radialGradient(svg) });
+svg.graticule({stroke:"white", step:30})
+svg.path({datum:world, fill:"white", fillOpacity:0.3})
+return svg.render()
+}
+
+function geoviz_tile(width){
+
+ let svg = viz.create({
+    projection: d3.geoMercator(),
+    domain: aus,
+    zoomable: true,
+    width
+  });
+
+  svg.tile({
+    url: "worldimagery",
+    zoomDelta: 1,
+    clipPath: svg.effect.clipPath({ datum: aus })
+  });
+  return svg.render();
+}
+
+function geoviz_bubble(width){
+
+ let svg = viz.create({
+    projection: d3.geoNaturalEarth(),
+    width
+  });
+
+  svg.tile({
+    url: "worldimagery",
+    zoomDelta: 1,
+    clipPath: svg.effect.clipPath({ datum: aus })
+  });
+  return svg.render();
+}
+
+// SIMPLIFY
+
+const simplify_k = Inputs.range([0.01, 0.2], {step: 0.01, value:0.01})
+const simplifyk = Generators.input(simplify_k);
+
+function simplify(width, k){
+
+const world_simpl = geo.simplify(world, {k})
+
+ let svg = viz.create({
+    projection: d3.geoEquirectangular(),
+   domain: world,
+    width
+  });
+
+svg.path({data:world_simpl, fill:"#D75C48", stroke:"white", strokeWidth:0.5})
+  return svg.render();
+}
+
+
+// BERTIN
+const bubble_k = Inputs.range([5, 20], {step: 1, value:10})
+const bubblek = Generators.input(bubble_k);
+
+function bertin_bubble(width, k){
+
+return bertin.draw({
+  params: { width, extent: deaths, margin:[40,10,40,20], background:"#EBF2F8" },
+  layers: [
+    {
+      type: "bubble",
+      geojson: deaths,
+      values: "Total Number of Dead and Missing",
+      k,
+      dorling: true,
+      iteration:100,
+      fill: "#f22e2e",
+      tooltip: ["$Total Number of Dead and Missing"]
+    },
+
+    ]
+})
+}
+
+const bertin_step = Inputs.range([5, 20], {step: 1, value:10})
+const bertinstep = Generators.input(bertin_step);
+function bertin_grid(width, k){
+
+
+return bertin.draw({
+  params: { width, extent: deaths, margin:[40,10,40,20], background:"#EBF2F8"  },
+  layers: [
+    {
+      type: "regulargrid",
+      geojson: deaths,
+      fillOpacity: 0.8,
+      values: "Total Number of Dead and Missing",
+      step: k,
+      fill: {
+        type: "choro",
+        values: "value",
+        colors: "Reds"
+      },
+      strokeWidth: 0.1,
+      tooltip: "$value"
+    },
+  ]
+})
+
+
+}
+
+const bertin_bandwidth = Inputs.range([2, 15], {step: 1, value:8})
+const bertinbandwidth = Generators.input(bertin_bandwidth);
+function bertin_smooth(width, k){
+
+
+return bertin.draw({
+  params: { width, extent: deaths, margin:[40,10,40,20],background:"#EBF2F8"  },
+  layers: [
+    {
+      type: "smooth",
+      thresholds: 100,
+      bandwidth: k,
+      colorcurve: 2,
+      remove: 0,
+      geojson: deaths,
+      values: "Total Number of Dead and Missing"
+    },
+  ]
+})
+
+}
+
+
+
+
+// BUFFER
+
+const buffer_k = Inputs.range([0, 1000], {step: 1, value:0})
+const bufferk = Generators.input(buffer_k);
+let aussbuff = geo.buffer(aus2, {dist:bufferk})
+
+
+
+
+
+function asyncbuff(dist){
+
+//const result = await geo.buffer(aus2, {dist:dist})
+
+let svg = viz.create({
+    projection: "mercator",
+   domain: aus, margin:50,
+    width
+  });
+svg.path({data:aus2, fill:"#D75C48", stroke:"white", fillOpacity:0.4, strokeWidth:0.5})
+//svg.path({data:result, fill:"none", stroke:"#D75C48", strokeWidth:2})
+return svg.render()
+}
+
+
+
+async function buff(width, k){
+let ausbuff = await geo.buffer(aus2, { dist: k })
+ let svg = viz.create({
+    projection: "mercator",
+   domain: aus, margin:50,
+    width
+  });
+svg.path({data:aus2, fill:"#D75C48", stroke:"white", fillOpacity:0.4, strokeWidth:0.5})
+svg.path({data:ausbuff, fill:"none", stroke:"#D75C48", strokeWidth:2})
+return svg.render()
+}
+return {geoviz_globe,geoviz_tile,geoviz_bubble,simplify_k,simplifyk,simplify,bubble_k,bubblek,bertin_bubble,bertin_step,bertinstep,bertin_grid,bertin_bandwidth,bertinbandwidth,bertin_smooth,buffer_k,bufferk,aussbuff,asyncbuff,buff};
+}});
+
+define({id: "92e98d87", body: () => {
+
+
+// function buff(){
+// let svg = viz.create({projection:"mercator"})
+// svg.path({data:aussbuff})
+// return (svg.render())
+// }
+}});
+
+define({id: "88fee98e", body: () => {
+//buff()
+}});
+
+define({id: "f5d02bd1", body: () => {
+  
+//   let svg = viz.create({ projection: "mercator", domain:aussbuff, width:width/2 });
+//   svg.path({ data: aus });
+//   svg.path({ data: aussbuff, fill: "none", stroke: "red" });
+//   display(svg.render());
+}});
+
+define({id: "2c2845de", body: () => {
+//   function disp(width){
+//   let svg = viz.create({ projection: "mercator", domain:aussbuff, width });
+//   svg.path({ data: aus });
+//   svg.path({ data: aussbuff, fill: "none", stroke: "red" });
+//   return svg.render();
+//}
+}});
+
+define({id: "84cdfa61", body: () => {
+//disp(400)
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<link rel="stylesheet" href="./_file/css/style.ad45c1cf.css">
+<div id="cell-9eeaefe2" class="observablehq observablehq--block"></div>
+<div class="hero"><h1> <img src="./_file/images/nico.1feb9b7a.jpg" width="110px"> Nicolas Lambert</h1></div>
+<div class="note">In this section, I share my main software development activities. You'll find lots more on my <a href="https://github.com/neocarto" target="_BLANK">github</a> account.</div>
+<div id="cell-95f9b2f9" class="observablehq observablehq--block observablehq--loading"></div>
+<div id="cell-2e6326d5" class="observablehq observablehq--block"></div>
+<h1 id="geotoolbox" tabindex="-1"><a class="observablehq-header-anchor" href="#geotoolbox">Geotoolbox</a></h1>
+<p><code>geotoolbox</code> is javascript tool for geographers based on d3-geo, topojson and geos-wasm. It allows to simply deal with geojson properties and provides several GIS operations useful for thematic cartography.</p>
+<div class="grid grid-cols-3">
+  <div class="card">
+        <h2><b>Simplify</b></h2>
+        <span id="cell-3d5880f4" class="observablehq--loading"></span>
+        <br>
+<span id="cell-39c1f63b" class="observablehq--loading"></span>
+</div>
+  <div class="card">
+      <h2><b>Buffer</b></h2>
+        <span id="cell-746a0291" class="observablehq--loading"></span>
+        <br>
+        <span id="cell-82361b7a" class="observablehq--loading"></span>
+<br>
+  </div>
+  <div class="card"></div>
+</div>
+<div class="card" style="background-color:white">
+See the <a href="https://github.com/riatelab/geotoolbox" targt="_BLANK">code repository</a> and some other <a href="https://observablehq.com/@neocartocnrs/hello-geotoolbox?collection=@neocartocnrs/geotoolbox" target="_BLANK">live examples</a>.</div>
+<h1 id="bertin" tabindex="-1"><a class="observablehq-header-anchor" href="#bertin">Bertin</a></h1>
+<p><code>bertin</code> is an easy to use wrapper around d3.js to facilitate the process of making thematic maps. The principle is to work with layers stacked on each other. As in a GIS, the layers that are displayed above are placed at the top in the code, the layers that are displayed below are placed at the bottom in the code. The layers that can be displayed are of several types: header, footer, graticule, outline, choro, typo, prop, shadow, scalebar, text... Each type has its own parameters</p>
+<div class="grid grid-cols-3">
+  <div class="card">
+        <h2><b>Bubbles</b></h2>
+                <span id="cell-641f1970" class="observablehq--loading"></span>
+  <span id="cell-711fe5e2" class="observablehq--loading"></span>
+</div>
+  <div class="card">
+      <h2><b>Grid</b></h2>
+       <span id="cell-ef3604cf" class="observablehq--loading"></span>
+  <span id="cell-78ffc9a0" class="observablehq--loading"></span>
+  </div>
+  <div class="card">
+      <h2><b>Smooth</b></h2>
+       <span id="cell-3179e70d" class="observablehq--loading"></span>
+  <span id="cell-cbe3e859" class="observablehq--loading"></span>
+  </div>
+</div>
+<div class="card" style="background-color:white">
+See the <a href="https://github.com/riatelab/bertin" targt="_BLANK">code repository</a> and some other <a href="https://observablehq.com/collection/@neocartocnrs/bertin" target="_BLANK">live examples</a>.</div>
+<h1 id="geoviz" tabindex="-1"><a class="observablehq-header-anchor" href="#geoviz">Geoviz</a></h1>
+<div id="cell-ce352801" class="observablehq observablehq--block"></div>
+<p><code>geoviz</code> is a JavaScript library for designing thematic maps. The library provides a set of d3 compatible functions that you can mix with the usual d3 syntax. The library is designed to be intuitive and concise. It allow to manage different geographic layers (points, lines, polygons) and marks (circles, labels, scale bar, title, north arrow, etc.) to design pretty maps. Its use is particularly well suited to Observable notebooks. Maps designed with geoviz are thematic, vectorial, interactive, interoperable and zoomable.</p>
+<div class="grid grid-cols-3" align="center">
+  <div class="card">
+        <h2><b>Rotable globes</b></h2>
+    <span id="cell-fbce633e" class="observablehq--loading"></span>
+</div>
+  <div class="card">
+      <h2><b>Zoomable tiles</b></h2>
+      <span id="cell-82143cdc" class="observablehq--loading"></span>
+  </div>
+  <div class="card">C</div>
+</div>
+<div class="card" style="background-color:white">
+See the <a href="https://github.com/riatelab/geoviz" targt="_BLANK">code repository</a>, some other <a href="https://observablehq.com/@neocartocnrs/geoviz" target="_BLANK">live examples</a> and the <a href="https://riatelab.github.io/geoviz/docs/" target="_BLANK">documentation api</a>.</div>
+<div id="cell-59a26482" class="observablehq observablehq--block"></div>
+<div id="cell-92e98d87" class="observablehq observablehq--block"></div>
+<div id="cell-88fee98e" class="observablehq observablehq--block"></div>
+<div id="cell-f5d02bd1" class="observablehq observablehq--block"></div>
+<div id="cell-2c2845de" class="observablehq observablehq--block"></div>
+<div id="cell-84cdfa61" class="observablehq observablehq--block"></div>
+</main>
+<footer id="observablehq-footer">
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-03-07T17:24:42">Mar 7, 2024</a>.</div>
+</footer>
+</div>
