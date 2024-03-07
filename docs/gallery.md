@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 <link rel="stylesheet" href="css/style.css">
 
 ```js
@@ -6,6 +10,9 @@ import {previews, previews2} from "./helpers/preview.js"
 ```
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
+
+<div class="note">In this section, I link to a selection of geovisualizations. You'll find plenty more in my <a href="https://observablehq.com/@neocartocnrs" target = "_BLANK">observable notebooks</a> account.</div>
+
 
 ```js
 menu("gallery")

@@ -39,7 +39,7 @@ function preview2({ path, title, author = "Nicolas Lambert", thumbnail }) {
     (event.currentTarget.firstElementChild.style.borderColor = "#e8e8e8")}>
     <div style="border: solid 1px #e8e8e8; border-radius: 4px; box-sizing: border-box; width: 100%; padding-top: 62.5%; background-size: cover; background-image: url(${encodeURI(
       thumbnail
-    )}.jpg);"></div>
+    )});"></div>
     <div style="width: 100%; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;">${title}</div>
   </a>`;
 }

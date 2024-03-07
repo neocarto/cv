@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 <link rel="stylesheet" href="css/style.css">
 
 ```js
@@ -6,22 +10,23 @@ import {menu} from "./helpers/menu.js"
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
 
+<div class="note">In this section, I list the books I've worked on. First, those for which I am the principal author. Then those on which I have worked a lot and fulfilled coordinating functions.</div>
+
 ```js
 menu("books")
 ```
 
-<hr/>
 
-# En tant qu'auteur principal
+# As lead author
 
-<div class="grid grid-cols-3">
-  <div class="card"><img src ="images/handbook.png" width="100%">Lambert, N., & Zanin, C. (2020). Practical Handbook of Thematic Cartography: Principles, Methods, and Applications. (S.l.): CRC Press. https://www.taylorfrancis.com/books/978042929196</div>
-  <div class="card"><img src ="images/MadMaps.png" width="100%">Lambert, N., & Zanin, C. (2019). Mad Maps – L’atlas qui va changer votre vision du Monde. (S.l.): Armand Colin. https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde</div>
-  <div class="card"><img src ="images/manuel.png" width="100%">Lambert, N., & Zanin, C. (2016). Manuel de cartographie: principes, méthodes, applications. (S.l.): Armand Colin. https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856
+<div class="grid grid-cols-3" align = "center">
+  <div class="card"><h1>2020</h1><img src ="images/handbook.png" width="100%"><p><a href ="https://www.taylorfrancis.com/books/978042929196" target = "_BLANK">Lambert, N., & Zanin, C. (2020). Practical Handbook of Thematic Cartography: Principles, Methods, and Applications. (S.l.): CRC Press.</a></p></div>
+  <div class="card"><h1>2019</h1><img src ="images/MadMaps.png" width="100%"><p><a href ="https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde" target = "_BLANK">Lambert, N., & Zanin, C. (2019). Mad Maps – L’atlas qui va changer votre vision du Monde. (S.l.): Armand Colin.</a></p></div>
+  <div class="card"><h1>2016</h1><img src ="images/manuel.png" width="100%"><p><a href ="https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856" target="_BLANK">Lambert, N., & Zanin, C. (2016). Manuel de cartographie: principes, méthodes, applications. (S.l.): Armand Colin.</a></p>
 </div>
 </div>
 
-# Contributions majeures
+# Key contributions
 
 
 <div class="grid grid-cols-4" align = "center">

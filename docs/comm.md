@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 <link rel="stylesheet" href="css/style.css">
 
 ```js
@@ -16,6 +20,8 @@ import {menu} from "./helpers/menu.js"
 ```
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
+
+<div class="note">In this section, I list my scientific talks. This is a bibText file. You can therefore choose the display format.</div>
 
 ```js
 menu("comm")
