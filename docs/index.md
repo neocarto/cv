@@ -1,3 +1,7 @@
+---
+toc: false
+---
+
 <link rel="stylesheet" href="css/style.css">
 
 ```js
@@ -5,13 +9,13 @@ import {menu} from "./helpers/menu.js"
 ```
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
-<div class = "hero"><h2>Ingénieur de recherche <a href ="https://www.cnrs.fr" target = "_BLANK">CNRS</a> en sciences de l'information géographique<br/>
-<a href = "https://riate.cnrs.fr/" target = "_BLANK"><img src="images/riate_red_high.png" width="100px"></img> - Centre pour l'analyse spatiale et la géovisualisation</a>
+<div class = "hero"><h2>Research Engineer in Geographical Information Sciences (<a href ="https://www.cnrs.fr" target = "_BLANK">CNRS</a>)<br/>
+<a href = "https://riate.cnrs.fr/" target = "_BLANK"><img src="images/riate_red_high.png" width="100px"></img> - Centre for Spatial Analysis and geovisualization</a>
 </div>
 
 <br/>
 
-<div class = "hero"><h2>Lauréat du <a href ="https://www.cnrs.fr/sites/default/files/download-file/LambertN.pdf" target = "_BLANK">CRISTAL du CNRS</a> (2011)</h2></div>
+<div class = "hero"><h2>Awarded the <a href ="https://www.cnrs.fr/sites/default/files/download-file/LambertN.pdf" target = "_BLANK">CNRS Cristal</a> in 2011</h2></div>
 
 <div class="grid grid-cols-4" style="vertical-align: middle; display: flex;">
   <a href ="https://observablehq.com/@neocartocnrs" target="_BLANK"><div class="card">
@@ -39,46 +43,32 @@ import {menu} from "./helpers/menu.js"
   </div></a>
 </div>
 
+# Activities
 
+Nicolas Lambert is a research engineer in geographic information science at CNRS. Within the UAR RIATE, he develops both interactive and animated maps with R and D3js ([Obervable](https://observablehq.com/@neocartocnrs?tab=profile)) and static editing maps. As member of the [Migreurop](https://migreurop.org/) network, the [MAGIS](https://github.com/magisAR9) research group and the Comité Français de Cartographie ([CFC](https://www.lecfc.fr/)), he has contributed to several books, including Atlas de l'Europe dans le monde (2008), Atlas des migrants en Europe (2009, 2012, 2017), Manuel de Cartographie (2016, published in English in 2020), Mad Maps (2019) and Atlas des migrations dans le monde (2022). He leads the research notebook [neocarto](https://neocarto.hypotheses.org/) and the section [Regard de cartographe](https://www.humanite.fr/mot-cle/regard-de-cartographe) for the newspaper l'Humanité. He teaches cartography at the University of Paris-Cité.
 
-
-
-
-# Travaux
-
-```js
-const style = view(Inputs.radio(["FR", "EN"], { value: "FR"}));
-```
-
-Nicolas Lambert est ingénieur de recherche en sciences de l’information géographique au CNRS. Au sein de l’UAR RIATE, il développe tout aussi bien des cartes interactives et animées avec R et D3js ([Obervable](https://observablehq.com/@neocartocnrs?tab=profile)) que des cartes d’édition statiques. Membre du réseau [Migreurop](https://migreurop.org/), du GDR [MAGIS](https://github.com/magisAR9) et du Comité Français de Cartographie ([CFC](https://www.lecfc.fr/)), il a participé à la réalisation de plusieurs ouvrages comme l’Atlas de l’Europe dans le monde (2008), l’Atlas des migrants en Europe (2009, 2012, 2017), le Manuel de Cartographie (2016, publié en anglais en 2020), Mad Maps (2019) et l'Atlas des migrations dans le monde (2022). Il anime le carnet de recherche [neocarto](https://neocarto.hypotheses.org/) et la rubrique [Regard de cartographe](https://www.humanite.fr/mot-cle/regard-de-cartographe) pour le journal l'Humanité. Il enseigne la cartographie numérique à l’université de Paris-Cité.
-
-
-```js
-// html`<div class= "grid">Nicolas Lambert is a research engineer in geographic information science at CNRS. Within the UAR RIATE, he develops both interactive and animated maps with R and D3js ([Obervable](https://observablehq.com/@neocartocnrs?tab=profile)) and static editing maps. As member of the [Migreurop](https://migreurop.org/) network, the [MAGIS](https://github.com/magisAR9) research group and the Comité Français de Cartographie ([CFC](https://www.lecfc.fr/)), he has contributed to several books, including Atlas de l'Europe dans le monde (2008), Atlas des migrants en Europe (2009, 2012, 2017), Manuel de Cartographie (2016, published in English in 2020), Mad Maps (2019) and Atlas des migrations dans le monde (2022). He leads the research notebook [neocarto](https://neocarto.hypotheses.org/) and the section [Regard de cartographe](https://www.humanite.fr/mot-cle/regard-de-cartographe) for the newspaper l'Humanité. He teaches cartography at the University of Paris-Cité".</div>`
-
-```
-
-# Parcours
+# Carrer
 
 <b>2000</b> - Entrée à GeoConcept SA.<br/><b>2002</b> - Entrée au Conseil Général de Seine-Saint-Denis.<br/><b>2004</b> : Entrée au CNRS sur concours externe (Ingénieur d’études) à l'UMS 2414 RIATE.<br/><b>2008</b> - Lauréat du concours de <a href ="http://mappemonde-archive.mgm.fr/num20/fig08/fig08401.html#:~:text=Mourir%20aux%20fronti%C3%A8res%20de%20l'Europe&text=R%C3%A9alis%C3%A9%20pour%20la%2019e,%2D%20Europe%20in%20the%20World">posters scientifiques</a> du FIG de Saint-Dié.<br/><b>2009</b> - Co-lauréat du [Prix Diderot Innovation](https://blog.espci.fr/actualites/files/2009/11/EFort-PrixDiderot2009.pdf) de l’université Paris 7.<br/><b>2011</b> : Lauréat du [Cristal du CNRS](http://www.cnrs.fr/sites/default/files/download-file/LambertN.pdf). **2015** : Classé premier au concours interne d’ingénieur de recherche.<br/><b>2016</b> - Publication d’un [Manuel de Cartographie](https://www.armand-colin.com/manuel-de-cartographie-principes-methodes-applications-9782200612856) aux éditions Armand Colin.<br><b>2019</b> - Publication de [Mad Maps](https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde-9782200625825) aux éditions Armand Colin. **2020** : Publication de [Practical Handbook of Thematic Cartography](https://www.taylorfrancis.com/books/practical-handbook-thematic-cartography-nicolas-lambert-christine-zanin/10.1201/9780429291968) aux éditions CRC Press. **2021** : Promu ingénieur de recherche 1e classe. <br><b>2021</b> : Lauréat du concours "[Black History DataViz](https://observablehq.com/@observablehq/announcing-the-black-history-dataviz-contest-winners)".
 
 
-# Publications
+# Scientific publications 
 
 ##  (selection)
 
-Bahoken, F., & Lambert, N. (2024). Le cartogramme par points – The Dot cartogram. Cybergeo.
+Bahoken, F., & <b>Lambert, N.</b> (2024). Le cartogramme par points – The Dot cartogram. Cybergeo.
 
-Lambert, N., Giraud, T., and Viry Matthieu, & Ysebaert, R. (2023). Cartographier pour le web avec la bibliothèque JavaScript `bertin`. SAGEO.
+<b>Lambert, N.</b>, Giraud, T., and Viry Matthieu, & Ysebaert, R. (2023). Cartographier pour le web avec la bibliothèque JavaScript `bertin`. SAGEO.
 
-Lambert, N., Giraud, T., & Ysebaert, R. (2022). Enjeux de communication dans la multireprésentation cartographique reproductible. Communication cartographique: Sémiologie graphique, sémiotique et géovisualisation, 73.
+<b>Lambert, N.</b>, Giraud, T., & Ysebaert, R. (2022). Enjeux de communication dans la multireprésentation cartographique reproductible. Communication cartographique: Sémiologie graphique, sémiotique et géovisualisation, 73.
 
-Lambert, N. (2020). Every map is an act of creation and not a mirror of the World. Some rhetorical issues about migration mapping. The Large Glass – journal for contemporary art, culture and theory.
+<b>Lambert, N.</b> (2020). Every map is an act of creation and not a mirror of the World. Some rhetorical issues about migration mapping. The Large Glass – journal for contemporary art, culture and theory.
 
-Lambert, N., & Clochard, O. (2015). Mobile and Fatal: The EU Borders. In Borderities and the Politics of Contemporary Mobile Borders (p. 119‑137). Springer.
+<b>Lambert, N.</b>, & Clochard, O. (2015). Mobile and Fatal: The EU Borders. In Borderities and the Politics of Contemporary Mobile Borders (p. 119‑137). Springer.
 
-# Voir aussi...
+<hr/>
 
+## See also
 ```js
 menu("home")
 ```

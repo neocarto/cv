@@ -4,30 +4,32 @@ export function menu(page) {
   let content = `<div class="grid grid-cols-4" style="display: flex; align:left">`;
 
   if (page !== "home") {
-    content += `<a href ="index"><div class="card" ${off}>Accueil</div></a>`;
+    content += `<a href ="index"><div class="card" ${off}>Home</div></a>`;
   }
   content += `<a href ="books"><div class="card" ${
     page == "books" ? on : off
-  }>Livres et Atlas</div></a>
+  }>Books</div></a>
   <a href ="publi"><div class="card" ${
     page == "publi" ? on : off
-  }>Liste des publications</div></a>
-  <a href ="comm"><div class="card" ${
-    page == "comm" ? on : off
-  }>Liste des communications</div></a>
-  <a href ="libs"><div class="card" ${
-    page == "libs" ? on : off
-  }>Développement logiciel</div></a>
-  <a href ="gallery"><div class="card" ${
-    page == "gallery" ? on : off
-  }>Gallerie</div></a>
+  }>Papers</div></a>
+  <a href ="comm"><div class="card" ${page == "comm" ? on : off}>Talks</div></a>
   <a href ="teach"><div class="card" ${
     page == "teach" ? on : off
-  }>Enseignement</div></a>
-  <a href ="divers"><div class="card" ${
-    page == "divers" ? on : off
-  }>Divers</div></a>
-</div>`;
+  }>Teaching</div></a>
+  <a href ="libs"><div class="card" ${
+    page == "libs" ? on : off
+  }>JS libraries</div></a>
+  <a href ="gallery"><div class="card" ${
+    page == "gallery" ? on : off
+  }>Gallery</div></a>
+
+  <a href ="video"><div class="card" ${
+    page == "video" ? on : off
+  }>Videos</div></a>
+  <a href ="other"><div class="card" ${
+    page == "other" ? on : off
+  }>Other/projects</div></a>
+  </div>`;
 
   let div = document.createElement("div");
   div.id = "menu";
