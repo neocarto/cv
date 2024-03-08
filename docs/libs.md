@@ -89,7 +89,7 @@ See the <a href = "https://github.com/riatelab/geotoolbox" targt = "_BLANK">code
 
 # Bertin
 
-`bertin` is an easy to use wrapper around d3.js to facilitate the process of making thematic maps. The principle is to work with layers stacked on each other. As in a GIS, the layers that are displayed above are placed at the top in the code, the layers that are displayed below are placed at the bottom in the code. The layers that can be displayed are of several types: header, footer, graticule, outline, choro, typo, prop, shadow, scalebar, text... Each type has its own parameters.
+[bertin.js](https://github.com/neocarto/bertin) is an easy to use wrapper around [d3js](https://github.com/d3/d3) to facilitate the process of **making thematic maps**. The principle is to work with layers stacked on each other. As in a GIS, the layers that are displayed above are placed at the top in the code, the layers that are displayed below are placed at the bottom in the code. The layers that can be displayed are of [several types](https://observablehq.com/@neocartocnrs/bertin-js-layer-types-in-brief): header, footer, graticule, outline, choro, typo, prop, shadow, scalebar, text... Each type has its own parameters. This list will be completed gradually.
 
 <div class="grid grid-cols-3" align = "center">
   <div class="card">
@@ -115,3 +115,14 @@ See the <a href = "https://github.com/riatelab/geotoolbox" targt = "_BLANK">code
 
 <div class="card" style = "background-color:white">
 See the <a href = "https://github.com/riatelab/bertin" targt = "_BLANK">code repository</a> and some other <a href ="https://observablehq.com/collection/@neocartocnrs/bertin" target = "_BLANK">live examples</a>.</div>
+
+# See also
+
+<div class="grid grid-cols-4" style="vertical-align: middle; display: flex;">
+  <a href ="https://observablehq.com/@neocartocnrs" target="_BLANK"><div class="card">
+<img src ="images/qq4vXsM7-80x80.png" width="25px"></img>
+  </div></a>
+    <a href ="https://github.com/neocarto" target="_BLANK"><div class="card">
+<img src ="images/github.png" width="25px"></img>
+  </div></a>
+</div>
