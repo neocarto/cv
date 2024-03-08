@@ -38,7 +38,7 @@ menu("libs")
 
 # Geoviz
 
-`geoviz` is a JavaScript library for designing thematic maps. The library provides a set of d3 compatible functions that you can mix with the usual d3 syntax. The library is designed to be intuitive and concise. It allow to manage different geographic layers (points, lines, polygons) and marks (circles, labels, scale bar, title, north arrow, etc.) to design pretty maps. Its use is particularly well suited to Observable notebooks. Maps designed with geoviz are thematic, vectorial, interactive, interoperable and zoomable.
+**[`geoviz`](https://github.com/riatelab/geoviz)** is a JavaScript library for designing thematic maps. The library provides a set of d3 compatible functions that you can mix with the usual d3 syntax. The library is designed to be intuitive and concise. It allow to manage different geographic layers (points, lines, polygons) and marks (circles, labels, scale bar, title, north arrow, etc.) to design pretty maps. Its use is particularly well suited to Observable notebooks. Maps designed with geoviz are thematic, vectorial, interactive, interoperable and zoomable.
 
 <div class="grid grid-cols-3" align = "center">
 
@@ -60,7 +60,7 @@ See the <a href = "https://github.com/riatelab/geoviz" targt = "_BLANK">code rep
 
 # Geotoolbox
 
-`geotoolbox` is javascript tool for geographers based on d3-geo, topojson and geos-wasm. It allows to simply deal with geojson properties and provides several GIS operations useful for thematic cartography.
+**[`geotoolbox`](https://github.com/riatelab/geotoolbox)** is GIS library for geographers based on d3-geo, topojson and geos-wasm. It allows to simply deal with geojson properties and provides several GIS operations useful for thematic cartography.
 
 <div class="grid grid-cols-3" align = "center">
 
@@ -89,7 +89,7 @@ See the <a href = "https://github.com/riatelab/geotoolbox" targt = "_BLANK">code
 
 # Bertin
 
-[bertin.js](https://github.com/neocarto/bertin) is an easy to use wrapper around [d3js](https://github.com/d3/d3) to facilitate the process of **making thematic maps**. The principle is to work with layers stacked on each other. As in a GIS, the layers that are displayed above are placed at the top in the code, the layers that are displayed below are placed at the bottom in the code. The layers that can be displayed are of [several types](https://observablehq.com/@neocartocnrs/bertin-js-layer-types-in-brief): header, footer, graticule, outline, choro, typo, prop, shadow, scalebar, text... Each type has its own parameters. This list will be completed gradually.
+**[`bertin`](https://github.com/neocarto/bertin)** is an easy to use wrapper around [d3js](https://github.com/d3/d3) to facilitate the process of **making thematic maps**. The principle is to work with layers stacked on each other. As in a GIS, the layers that are displayed above are placed at the top in the code, the layers that are displayed below are placed at the bottom in the code. The layers that can be displayed are of [several types](https://observablehq.com/@neocartocnrs/bertin-js-layer-types-in-brief): header, footer, graticule, outline, choro, typo, prop, shadow, scalebar, text... Each type has its own parameters. This list will be completed gradually.
 
 <div class="grid grid-cols-3" align = "center">
   <div class="card">
