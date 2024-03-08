@@ -1,0 +1,7 @@
+/**
+ * Bundled by jsDelivr using Rollup v2.79.1 and Terser v5.19.2.
+ * Original file: /npm/ms@2.0.0/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+var e=1e3,s=60*e,r=60*s,a=24*r,n=365.25*a,c=function(c,i){i=i||{};var u,o=typeof c;if("string"===o&&c.length>0)return function(c){if((c=String(c)).length>100)return;var t=/^((?:\d+)?\.?\d+) *(milliseconds?|msecs?|ms|seconds?|secs?|s|minutes?|mins?|m|hours?|hrs?|h|days?|d|years?|yrs?|y)?$/i.exec(c);if(!t)return;var i=parseFloat(t[1]);switch((t[2]||"ms").toLowerCase()){case"years":case"year":case"yrs":case"yr":case"y":return i*n;case"days":case"day":case"d":return i*a;case"hours":case"hour":case"hrs":case"hr":case"h":return i*r;case"minutes":case"minute":case"mins":case"min":case"m":return i*s;case"seconds":case"second":case"secs":case"sec":case"s":return i*e;case"milliseconds":case"millisecond":case"msecs":case"msec":case"ms":return i;default:return}}(c);if("number"===o&&!1===isNaN(c))return i.long?t(u=c,a,"day")||t(u,r,"hour")||t(u,s,"minute")||t(u,e,"second")||u+" ms":function(n){if(n>=a)return Math.round(n/a)+"d";if(n>=r)return Math.round(n/r)+"h";if(n>=s)return Math.round(n/s)+"m";if(n>=e)return Math.round(n/e)+"s";return n+"ms"}(c);throw new Error("val is not a non-empty string or a valid number. val="+JSON.stringify(c))};function t(e,s,r){if(!(e<s))return e<1.5*s?Math.floor(e/s)+" "+r:Math.ceil(e/s)+" "+r+"s"}export{c as default};
