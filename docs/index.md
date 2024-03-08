@@ -10,7 +10,7 @@ import {menu} from "./helpers/menu.js"
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
 <div class = "hero"><h2>Research Engineer in Geographical Information Sciences (<a href ="https://www.cnrs.fr" target = "_BLANK">CNRS</a>)<br/>
-<a href = "https://riate.cnrs.fr/" target = "_BLANK"><img src="images/riate_red_high.png" width="100px"></img> - Centre for Spatial Analysis and geovisualization</a>
+<a href = "https://riate.cnrs.fr/" target = "_BLANK"><img src="images/riate_red_high.png" width="100px"></img> - Centre for Spatial Analysis and Geovisualization</a>
 </div>
 
 <div class="note" label style="color:#838891">#OpenScience #Geoviz #Maps #Dataviz #Cartography #JavaScript #Rstats #Rspatial #Observable #Migrations #RadicalCartography</div>
