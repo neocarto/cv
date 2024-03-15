@@ -56,7 +56,7 @@ menu("libs")
 </div>
 
 <div class="card" style = "background-color:white">
-See the <a href = "https://github.com/riatelab/geoviz" targt = "_BLANK">code repository</a>, some other <a href ="https://observablehq.com/@neocartocnrs/geoviz" target = "_BLANK">live examples</a> and the <a href = "https://riatelab.github.io/geoviz/docs/" target = "_BLANK">documentation api</a>.</div>
+See the <a href = "https://github.com/riatelab/geoviz" targt = "_BLANK">code repository</a>, some other <a href ="https://observablehq.com/@neocartocnrs/geoviz" target = "_BLANK">live examples</a> and the <a href = "https://riatelab.github.io/geoviz/" target = "_BLANK">documentation api</a>.</div>
 
 # Geotoolbox
 
