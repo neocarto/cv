@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Geoviz | Nicolas Lambert</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-glacier.css">
+<link rel="preload" as="style" href="./_observablehq/stdlib/inputs.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-glacier.css">
+<link rel="stylesheet" type="text/css" href="./_observablehq/stdlib/inputs.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/helpers/menu.7a695de9.js">
+<link rel="modulepreload" href="./_import/components/geoviz.373d7801.js">
+<link rel="modulepreload" href="./_import/components/geotoolbox.06a3320e.js">
+<link rel="modulepreload" href="./_import/components/bertin.e986ada6.js">
+<link rel="modulepreload" href="./_npm/geoviz@0.5.2/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/geotoolbox@2.0.3/+esm.js">
+<link rel="modulepreload" href="./_npm/bertin@1.8.5/+esm.js">
+<link rel="modulepreload" href="./_observablehq/stdlib/inputs.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/+esm.js">
+<link rel="modulepreload" href="./_npm/isoformat@0.2.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-selection@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-array/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale@4.0.2/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-force@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-shape@3.2.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-tile@1.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo-scale-bar@1.2.5/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-zoom@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-interpolate@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-transition@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/versor@0.2/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-format@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-geo-projection@4.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/statsbreaks@1.0.6/+esm.js">
+<link rel="modulepreload" href="./_npm/dicopal@0.6.4/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-array@3.2.4/+esm.js">
+<link rel="modulepreload" href="./_npm/topojson-server@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/geos-wasm@1.2.1/+esm.js">
+<link rel="modulepreload" href="./_npm/topojson-client@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/topojson-simplify@3.0.3/+esm.js">
+<link rel="modulepreload" href="./_npm/proj4@2.10.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-drag@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-scale-chromatic@3.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-quadtree@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/boolean-point-in-polygon@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/bbox@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/intersect@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/rbush@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-contour@4.0.2/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/io/GeoJSONReader.js/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/io/GeoJSONWriter.js/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/operation/union/UnionOp.js/+esm.js">
+<link rel="modulepreload" href="./_npm/jsts@2.11.0/org/locationtech/jts/operation/buffer/BufferOp.js/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/random@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/internmap@2.0.3/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-time@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-time-format@4.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-dispatch@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-timer@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-path@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-color@3.1.0/+esm.js">
+<link rel="modulepreload" href="./_npm/d3-ease@3.0.1/+esm.js">
+<link rel="modulepreload" href="./_npm/wkt-parser@1.3.3/+esm.js">
+<link rel="modulepreload" href="./_npm/mgrs@1.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/invariant@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/meta@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/@turf/helpers@6.5.0/+esm.js">
+<link rel="modulepreload" href="./_npm/polygon-clipping@0.15.7/+esm.js">
+<link rel="modulepreload" href="./_npm/quickselect@2.0.0/+esm.js">
+<link rel="modulepreload" href="./_npm/splaytree@3.1.2/+esm.js">
+<link rel="modulepreload" href="./_npm/robust-predicates@3.0.2/+esm.js">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/AUS.geojson", {"name":"./data/AUS.geojson","mimeType":"application/geo+json","path":"./_file/data/AUS.f9eb88f5.geojson"});
+registerFile("./data/aussimpl.json", {"name":"./data/aussimpl.json","mimeType":"application/json","path":"./_file/data/aussimpl.d18b7081.json"});
+registerFile("./data/bar.json", {"name":"./data/bar.json","mimeType":"application/json","path":"./_file/data/bar.eff8b43b.json"});
+registerFile("./data/paris.geojson", {"name":"./data/paris.geojson","mimeType":"application/geo+json","path":"./_file/data/paris.959868f5.geojson"});
+registerFile("./data/pub.json", {"name":"./data/pub.json","mimeType":"application/json","path":"./_file/data/pub.fb79126e.json"});
+registerFile("./data/world.json", {"name":"./data/world.json","mimeType":"application/json","path":"./_file/data/world.0a51aaae.json"});
+
+define({id: "5658423e", outputs: ["menu","globe","tile","thematic","simplify","buffer","intersect","dots","grid","smooth"], body: async () => {
+const [{menu}, {globe, tile, thematic}, {simplify, buffer, intersect}, {dots, grid, smooth}] = await Promise.all([import("./_import/helpers/menu.7a695de9.js"), import("./_import/components/geoviz.373d7801.js"), import("./_import/components/geotoolbox.06a3320e.js"), import("./_import/components/bertin.e986ada6.js")]);
+// IMPORTS
+
+return {menu,globe,tile,thematic,simplify,buffer,intersect,dots,grid,smooth};
+}});
+
+define({id: "26641f62", inputs: ["Inputs","Generators"], outputs: ["simplify_k","simplifyk","dots_k","dotsk","grid_k","gridk","smooth_k","smoothk","buffer_k","bufferk"], body: (Inputs,Generators) => {
+// Inputs
+const simplify_k = Inputs.range([0.01, 0.2], {step: 0.01, value:0.01})
+const simplifyk = Generators.input(simplify_k);
+const dots_k = Inputs.checkbox(["pubs", "bars"], {
+  value: ["pubs", "bars"]
+})
+const dotsk = Generators.input(dots_k);
+const grid_k = Inputs.range([10, 40], {step: 1, value:15})
+const gridk = Generators.input(grid_k);
+const smooth_k = Inputs.range([3, 10], {step: 1, value:5})
+const smoothk = Generators.input(smooth_k);
+const buffer_k = Inputs.range([0, 1000], {step: 10, value:500})
+const bufferk = Generators.input(buffer_k);
+return {simplify_k,simplifyk,dots_k,dotsk,grid_k,gridk,smooth_k,smoothk,buffer_k,bufferk};
+}});
+
+define({id: "95f9b2f9", inputs: ["menu","display"], body: async (menu,display) => {
+display(await(
+menu("libs")
+))
+}});
+
+define({id: "011f837a", inline: true, inputs: ["resize","globe","display"], body: async (resize,globe,display) => {
+display(await(
+resize((width) => globe(width))
+))
+}});
+
+define({id: "8bdbb36b", inline: true, inputs: ["resize","tile","display"], body: async (resize,tile,display) => {
+display(await(
+resize((width) => tile(width))
+))
+}});
+
+define({id: "a5c7d4c3", inline: true, inputs: ["resize","thematic","display"], body: async (resize,thematic,display) => {
+display(await(
+resize((width) => thematic(width))
+))
+}});
+
+define({id: "3d5880f4", inline: true, inputs: ["simplify_k","display"], body: async (simplify_k,display) => {
+display(await(
+simplify_k
+))
+}});
+
+define({id: "39c1f63b", inline: true, inputs: ["resize","simplify","simplifyk","display"], body: async (resize,simplify,simplifyk,display) => {
+display(await(
+resize((width) => simplify(width, simplifyk))
+))
+}});
+
+define({id: "746a0291", inline: true, inputs: ["buffer_k","display"], body: async (buffer_k,display) => {
+display(await(
+buffer_k
+))
+}});
+
+define({id: "e6b503ca", inline: true, inputs: ["buffer","bufferk","display"], body: async (buffer,bufferk,display) => {
+display(await(
+buffer(200, bufferk)
+))
+}});
+
+define({id: "42e6170b", inline: true, inputs: ["intersect","display"], body: async (intersect,display) => {
+display(await(
+intersect(200)
+))
+}});
+
+define({id: "a031005c", inline: true, inputs: ["dots_k","display"], body: async (dots_k,display) => {
+display(await(
+dots_k
+))
+}});
+
+define({id: "df00b3ec", inline: true, inputs: ["resize","dots","dotsk","display"], body: async (resize,dots,dotsk,display) => {
+display(await(
+resize((width) => dots(width, dotsk))
+))
+}});
+
+define({id: "e27ff584", inline: true, inputs: ["grid_k","display"], body: async (grid_k,display) => {
+display(await(
+grid_k
+))
+}});
+
+define({id: "7967e897", inline: true, inputs: ["resize","grid","gridk","display"], body: async (resize,grid,gridk,display) => {
+display(await(
+resize((width) => grid(width, gridk))
+))
+}});
+
+define({id: "bf64e602", inline: true, inputs: ["smooth_k","display"], body: async (smooth_k,display) => {
+display(await(
+smooth_k
+))
+}});
+
+define({id: "902510f7", inline: true, inputs: ["resize","smooth","smoothk","display"], body: async (resize,smooth,smoothk,display) => {
+display(await(
+resize((width) => smooth(width, smoothk))
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<link rel="stylesheet" href="./_file/css/style.ad45c1cf.css">
+<div id="cell-5658423e" class="observablehq observablehq--block"></div>
+<div id="cell-26641f62" class="observablehq observablehq--block"></div>
+<div class="hero"><h1> <img src="./_file/images/nico.1feb9b7a.jpg" width="110px"> Nicolas Lambert</h1></div>
+<div class="note">In this section, I share my main software development activities. You'll find lots more on my <a href="https://github.com/neocarto" target="_BLANK">github</a> account.</div>
+<div id="cell-95f9b2f9" class="observablehq observablehq--block observablehq--loading"></div>
+<h1 id="geoviz" tabindex="-1"><a class="observablehq-header-anchor" href="#geoviz">Geoviz</a></h1>
+<p><strong><a href="https://github.com/riatelab/geoviz"><code>geoviz</code></a></strong> is a JavaScript library for designing thematic maps. The library provides a set of d3 compatible functions that you can mix with the usual d3 syntax. The library is designed to be intuitive and concise. It allow to manage different geographic layers (points, lines, polygons) and marks (circles, labels, scale bar, title, north arrow, etc.) to design pretty maps. Its use is particularly well suited to Observable notebooks. Maps designed with geoviz are thematic, vectorial, interactive, interoperable and zoomable.</p>
+<div class="grid grid-cols-3" align="center">
+  <div class="card">
+        <h2><b>Interactive globes</b></h2>
+         <span id="cell-011f837a" class="observablehq--loading"></span>
+</div>
+ <div class="card">
+   <h2><b>Zoomable tiles</b></h2>
+         <span id="cell-8bdbb36b" class="observablehq--loading"></span>
+ </div>
+  <div class="card"><h2><b>Thematic Maps</b></h2> <span id="cell-a5c7d4c3" class="observablehq--loading"></span></div>
+</div>
+<div class="card" style="background-color:white">
+See the <a href="https://github.com/riatelab/geoviz" targt="_BLANK">code repository</a>, some other <a href="https://observablehq.com/@neocartocnrs/geoviz" target="_BLANK">live examples</a> and the <a href="https://riatelab.github.io/geoviz/" target="_BLANK">documentation api</a>.</div>
+<h1 id="geotoolbox" tabindex="-1"><a class="observablehq-header-anchor" href="#geotoolbox">Geotoolbox</a></h1>
+<p><strong><a href="https://github.com/riatelab/geotoolbox"><code>geotoolbox</code></a></strong> is GIS library for geographers based on d3-geo, topojson and geos-wasm. It allows to simply deal with geojson properties and provides several GIS operations useful for thematic cartography.</p>
+<div class="grid grid-cols-3" align="center">
+  <div class="card">
+        <h2><b>Simplify</b></h2>
+                 <span id="cell-3d5880f4" class="observablehq--loading"></span>
+        <br>
+<span id="cell-39c1f63b" class="observablehq--loading"></span>
+</div>
+ <div class="card">
+   <h2><b>Buffer</b></h2>
+       <span id="cell-746a0291" class="observablehq--loading"></span>
+       <br>
+       <span id="cell-e6b503ca" class="observablehq--loading"></span>
+ </div>
+  <div class="card">
+   <h2><b>Intersect</b></h2>
+       <span id="cell-42e6170b" class="observablehq--loading"></span>
+ </div>
+</div>
+<div class="card" style="background-color:white">
+See the <a href="https://github.com/riatelab/geotoolbox" targt="_BLANK">code repository</a> and some other <a href="https://observablehq.com/@neocartocnrs/hello-geotoolbox?collection=@neocartocnrs/geotoolbox" target="_BLANK">live examples</a>.</div>
+<h1 id="bertin" tabindex="-1"><a class="observablehq-header-anchor" href="#bertin">Bertin</a></h1>
+<p><strong><a href="https://github.com/neocarto/bertin"><code>bertin</code></a></strong> is an easy to use wrapper around <a href="https://github.com/d3/d3">d3js</a> to facilitate the process of <strong>making thematic maps</strong>. The principle is to work with layers stacked on each other. As in a GIS, the layers that are displayed above are placed at the top in the code, the layers that are displayed below are placed at the bottom in the code. The layers that can be displayed are of <a href="https://observablehq.com/@neocartocnrs/bertin-js-layer-types-in-brief">several types</a>: header, footer, graticule, outline, choro, typo, prop, shadow, scalebar, text... Each type has its own parameters. This list will be completed gradually.</p>
+<div class="grid grid-cols-3" align="center">
+  <div class="card">
+        <h2><b>Dots</b></h2>
+        <span id="cell-a031005c" class="observablehq--loading"></span>
+        <br>
+         <span id="cell-df00b3ec" class="observablehq--loading"></span>
+</div>
+ <div class="card">
+   <h2><b>Grid</b></h2>
+          <span id="cell-e27ff584" class="observablehq--loading"></span>
+        <br>
+       <span id="cell-7967e897" class="observablehq--loading"></span>
+ </div>
+  <div class="card">
+   <h2><b>Smooth</b></h2>
+                   <span id="cell-bf64e602" class="observablehq--loading"></span>
+        <br>
+       <span id="cell-902510f7" class="observablehq--loading"></span>
+ </div>
+</div>
+<div class="card" style="background-color:white">
+See the <a href="https://github.com/riatelab/bertin" targt="_BLANK">code repository</a> and some other <a href="https://observablehq.com/collection/@neocartocnrs/bertin" target="_BLANK">live examples</a>.</div>
+<h1 id="see-also" tabindex="-1"><a class="observablehq-header-anchor" href="#see-also">See also</a></h1>
+<div class="grid grid-cols-4" style="vertical-align: middle; display: flex;">
+  <a href="https://observablehq.com/@neocartocnrs" target="_BLANK"><div class="card">
+<img src="./_file/images/qq4vXsM7-80x80.da5e2e78.png" width="25px">
+  </div></a>
+    <a href="https://github.com/neocarto" target="_BLANK"><div class="card">
+<img src="./_file/images/github.adfa7131.png" width="25px">
+  </div></a>
+</div></main>
+<footer id="observablehq-footer">
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-03-20T15:57:51">Mar 20, 2024</a>.</div>
+</footer>
+</div>
