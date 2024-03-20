@@ -19,20 +19,23 @@ export function menu(page) {
   <a href ="libs"><div class="card" ${
     page == "libs" ? on : off
   }>JS libraries</div></a>
-  <a href ="gallery"><div class="card" ${
-    page == "gallery" ? on : off
-  }>Gallery</div></a>
-
-  <a href ="video"><div class="card" ${
-    page == "video" ? on : off
-  }>Videos</div></a>
-  <a href ="other"><div class="card" ${
-    page == "other" ? on : off
-  }>Other/projects</div></a>
   </div>`;
 
   let div = document.createElement("div");
   div.id = "menu";
   div.innerHTML = content;
   return document.body.appendChild(div);
+}
+
+{
+  /* <a href ="gallery"><div class="card" ${
+  page == "gallery" ? on : off
+}>Gallery</div></a>
+
+<a href ="video"><div class="card" ${
+  page == "video" ? on : off
+}>Videos</div></a>
+<a href ="other"><div class="card" ${
+  page == "other" ? on : off
+}>Other/projects</div></a> */
 }
