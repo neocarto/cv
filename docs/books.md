@@ -17,7 +17,7 @@ menu("books")
 ```
 
 
-# As lead author
+# As lead author 
 
 <div class="grid grid-cols-3" align = "center">
   <div class="card"><h1>2020</h1><img src ="images/handbook.png" width="100%"><p><a href ="https://www.taylorfrancis.com/books/978042929196" target = "_BLANK">Lambert, N., & Zanin, C. (2020). Practical Handbook of Thematic Cartography: Principles, Methods, and Applications. (S.l.): CRC Press.</a></p></div>
