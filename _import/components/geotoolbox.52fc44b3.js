@@ -9,21 +9,6 @@ const d3 = Object.assign({}, { geoEquirectangular });
 const world = await FileAttachment("../../data/world.json", import.meta.url).json();
 const aus = await FileAttachment("../../data/aussimpl.json", import.meta.url).json();
 
-// Data Handling
-const china = geo.properties.subset({
-  x: world,
-  field: "ISO3",
-  selection: "CHN",
-});
-const india = geo.properties.subset({
-  x: world,
-  field: "ISO3",
-  selection: "IND",
-});
-const china_buff = await geo.buffer(china, { dist: 1000 });
-const india_buff = await geo.buffer(india, { dist: 500 });
-const clipped = await geo.clip(china_buff, { clip: india_buff });
-
 // Simplifiy
 export function simplify(width, k) {
   const world_simpl = geo.simplify(world, { k });
@@ -42,13 +27,21 @@ export function simplify(width, k) {
 }
 
 // Buffer
-export async function buffer(width, k) {
-  const aus_simpl = await geo.buffer(aus, { dist: k });
+
+export function buffermap(width, buffered) {
   let svg = viz.create({
     projection: d3.geoEquirectangular(),
-    domain: aus_simpl,
+    domain: buffered,
     margin: 1,
     width,
+  });
+
+  svg.path({
+    data: buffered,
+    fill: "none",
+    stroke: "#D75C48",
+    strokeWidth: 2,
+    strokeDasharray: [4, 2],
   });
 
   svg.path({
@@ -57,47 +50,31 @@ export async function buffer(width, k) {
     fillOpacity: 0.3,
     stroke: "none",
   });
-  svg.path({
-    data: aus_simpl,
-    fill: "none",
-    stroke: "#D75C48",
-    strokeWidth: 2,
-    strokeDasharray: [4, 2],
-  });
-
-  return Promise.resolve(svg.render());
+  return svg.render();
 }
 
-// Intersect
+// Render Intersect
 
-export async function intersect(width) {
+export function intersect(width, china_buff, india_buff) {
   let svg = viz.create({
     projection: d3.geoEquirectangular(),
     domain: [china_buff, india_buff],
+    //domain: clipped,
     margin: [30, 0, 0, 0],
     width,
   });
 
   svg.path({
     data: china_buff,
-    fill: "none",
-    stroke: "#D75C48",
-    strokeWidth: 2,
-    strokeDasharray: [4, 2],
+    fill: "#3c46b0",
+    stroke: "none",
+    fillOpacity: 0.4,
   });
   svg.path({
     data: india_buff,
-    fill: "none",
-    stroke: "#D75C48",
-    strokeWidth: 2,
-    strokeDasharray: [4, 2],
+    fill: "#bd1542",
+    stroke: "none",
+    fillOpacity: 0.4,
   });
-  svg.path({
-    data: clipped,
-    strokeWidth: 2,
-    stroke: "#D75C48",
-    fill: "#D75C48",
-  });
-
-  return Promise.resolve(svg.render());
+  return svg.render();
 }
