@@ -6,11 +6,37 @@ toc: false
 
 ```js
 // IMPORTS
+import * as geo from "npm:geotoolbox@2.0.3";
 import {menu} from "./helpers/menu.js"
 import {globe, tile, thematic} from "./components/geoviz.js"
-import {simplify, buffer, intersect} from "./components/geotoolbox.js"
+import {simplify, buffer, intersect, buffermap} from "./components/geotoolbox.js"
 import {dots, grid, smooth} from "./components/bertin.js"
 ```
+
+```js
+// DATA
+const aus = await FileAttachment("./data/aussimpl.json").json();
+const world = await FileAttachment("./data/world.json").json();
+const china = await geo.properties.subset({
+  x: world,
+  field: "ISO3",
+  selection: "CHN",
+});
+const india = await geo.properties.subset({
+  x: world,
+  field: "ISO3",
+  selection: "IND",
+});
+```
+
+```js
+const china_buff = await geo.buffer(china, { dist: bufferk2 });
+```
+
+```js
+const india_buff = await geo.buffer(india, { dist: bufferk2 });
+```
+
 
 ```js
 // Inputs
@@ -26,6 +52,8 @@ const smooth_k = Inputs.range([3, 10], {step: 1, value:5})
 const smoothk = Generators.input(smooth_k);
 const buffer_k = Inputs.range([0, 1000], {step: 10, value:500})
 const bufferk = Generators.input(buffer_k);
+const buffer_k2 = Inputs.range([0, 1000], {step: 10, value:500})
+const bufferk2 = Generators.input(buffer_k2);
 ```
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
@@ -62,6 +90,11 @@ See the <a href = "https://github.com/riatelab/geoviz" targt = "_BLANK">code rep
 
 **[`geotoolbox`](https://github.com/riatelab/geotoolbox)** is GIS library for geographers based on d3-geo, topojson and geos-wasm. It allows to simply deal with geojson properties and provides several GIS operations useful for thematic cartography.
 
+
+```js
+const buffered = geo.buffer(aus, {dist: bufferk});
+```
+
 <div class="grid grid-cols-3" align = "center">
 
   <div class="card">
@@ -74,15 +107,22 @@ ${resize((width) => simplify(width, simplifyk))}
    <h2><b>Buffer</b></h2>
        ${buffer_k}
        <br/>
-       ${buffer(200, bufferk)}
+       ${resize((width) => buffermap(width, buffered))}
+
               
 
- </div>
+</div>
+
   <div class="card">
    <h2><b>Intersect</b></h2>
-       ${intersect(200)}
+       ${buffer_k2}
+       <br/>
+     ${resize((width) => intersect(width,  china_buff, india_buff))}
  </div>
-</div>
+
+</div> 
+
+
 
 <div class="card" style = "background-color:white">
 See the <a href = "https://github.com/riatelab/geotoolbox" targt = "_BLANK">code repository</a> and some other <a href ="https://observablehq.com/@neocartocnrs/hello-geotoolbox?collection=@neocartocnrs/geotoolbox" target = "_BLANK">live examples</a>.</div>
