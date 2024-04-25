@@ -18,6 +18,7 @@ import {menu} from "./helpers/menu.js"
 
 <div class = "hero"><h2>Awarded the <a href ="https://www.cnrs.fr/sites/default/files/download-file/LambertN.pdf" target = "_BLANK">CNRS Cristal</a> in 2011</h2></div>
 
+
 <div class="grid grid-cols-4" style="vertical-align: middle; display: flex;">
   <a href ="https://observablehq.com/@neocartocnrs" target="_BLANK"><div class="card">
 <img src ="images/qq4vXsM7-80x80.png" width="25px"></img>
@@ -46,7 +47,7 @@ import {menu} from "./helpers/menu.js"
 
 # Activities
 
-Nicolas Lambert is a research engineer in geographic information science at CNRS. Within the UAR RIATE, he develops both interactive and animated maps with R and D3js ([Obervable](https://observablehq.com/@neocartocnrs?tab=profile)) and static editing maps for books oand atlases. As member of the [Migreurop](https://migreurop.org/) network, the [MAGIS](https://github.com/magisAR9) research group and the Comité Français de Cartographie ([CFC](https://www.lecfc.fr/)), he has contributed to several books, including the *Atlas de l'Europe dans le monde* (2008), the *Atlas des migrants en Europe* (2009, 2012, 2017), the *Manuel de Cartographie* (2016, published in English in 2020), *Mad Maps* (2019) and the *Atlas des migrations dans le monde* (2022). He leads the research notebook [neocarto](https://neocarto.hypotheses.org/) and the section [Regard de cartographe](https://www.humanite.fr/mot-cle/regard-de-cartographe) for the newspaper l'Humanité. He teaches cartography at the University of Paris-Cité.
+Nicolas Lambert is a research engineer in geographic information science at CNRS. Within the UAR RIATE, he develops both interactive and animated maps with R and D3js ([Obervable](https://observablehq.com/@neocartocnrs?tab=profile)) and static editing maps for books oand atlases. As member of the [Migreurop](https://migreurop.org/) network, the [MAGIS](https://github.com/magisAR9) research group and the Comité Français de Cartographie ([CFC](https://www.lecfc.fr/)), he has contributed to several books, including the *Atlas de l'Europe dans le monde* (2008), the *Atlas des migrants en Europe* (2009, 2012, 2017), the *Manuel de Cartographie* (2016, published in English in 2020), *Mad Maps* (2019) and the *Atlas des migrations dans le monde* (2022). He leads the research notebook [neocarto](https://neocarto.hypotheses.org/) and the section [Regard de cartographe](https://www.humanite.fr/serie/le-regard-du-cartographe) for the newspaper l'Humanité. He teaches cartography at the University of Paris-Cité.
 
 # Carrer
 

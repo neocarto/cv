@@ -12,7 +12,17 @@
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
 <script type="module">
 
-import "./_observablehq/client.js";
+import {define} from "./_observablehq/client.js";
+import {registerFile} from "./_observablehq/stdlib.js";
+
+registerFile("./data/countries.json", {"name":"./data/countries.json","mimeType":"application/json","path":"./_file/data/countries.138555f3.json"});
+
+define({id: "d98c43d4", inputs: ["FileAttachment","display"], outputs: ["world"], body: async (FileAttachment,display) => {
+//const world = await FileAttachment("./data/world.json").json();
+const world = await FileAttachment("./data/countries.json").json();
+display(world)
+return {world};
+}});
 
 </script>
 <aside id="observablehq-toc" data-selector="h1:not(:first-of-type), h2:first-child, :not(h1) + h2">
@@ -21,8 +31,9 @@ import "./_observablehq/client.js";
 </aside>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
+<div id="cell-d98c43d4" class="observablehq observablehq--block"></div>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-03-20T09:49:16">Mar 20, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-04-25T09:17:15">Apr 25, 2024</a>.</div>
 </footer>
 </div>
