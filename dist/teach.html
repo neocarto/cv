@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Nicolas Lambert</title>
+<title>Cours et formations | Nicolas Lambert</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_observablehq/theme-glacier.css">
@@ -11,14 +11,16 @@
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
 <link rel="modulepreload" href="./_import/helpers/menu.7a695de9.js">
+<link rel="modulepreload" href="./_import/helpers/preview.09551182.js">
+<link rel="modulepreload" href="./_npm/htl@0.3.1/+esm.js">
 <script type="module">
 
 import {define} from "./_observablehq/client.js";
 
-define({id: "9eeaefe2", outputs: ["menu"], body: async () => {
-const {menu} = await import("./_import/helpers/menu.7a695de9.js");
+define({id: "d027c060", outputs: ["menu","previews2"], body: async () => {
+const [{menu}, {previews2}] = await Promise.all([import("./_import/helpers/menu.7a695de9.js"), import("./_import/helpers/preview.09551182.js")]);
 
-return {menu};
+return {menu,previews2};
 }});
 
 define({id: "5ddaee6f", inputs: ["menu","display"], body: async (menu,display) => {
@@ -27,14 +29,193 @@ menu("teach")
 ))
 }});
 
+define({id: "b76a1268", inputs: ["previews2","display"], body: async (previews2,display) => {
+display(await(
+previews2([
+
+  {
+        path: "https://www.youtube.com/watch?v=EKO4qpAzZNY",
+    thumbnail:
+      "https://cartong.pages.gitlab.cartong.org/learning-corner/assets/images/toolbox9/7_2_golden_rules/1_semio_bis.png",
+    title: "Le langage cartographique"
+  },
+  {
+        path: "https://www.youtube.com/watch?v=axKfSRM_G3g",
+    thumbnail:
+      "https://i.ytimg.com/vi/axKfSRM_G3g/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC65OSgCrcB_GuGeQQC0GxLh2GM8A",
+    title: "Démarrer avec Inkscape"
+  },
+       {
+    path: "https://www.youtube.com/watch?v=RZ0qnfNTDJY",
+    thumbnail:
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Inkscape_Logo.svg/800px-Inkscape_Logo.svg.png",
+    title: "trucs avec Inkscape"
+  },
+  {
+    path: "https://www.youtube.com/watch?v=hNWZsVSeX2M",
+    thumbnail:
+      "https://i.ytimg.com/vi/hNWZsVSeX2M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAJFWjdFdEL0nXliVeMWi70IMTB0A",
+    title: "Mise en page avec inkscape"
+  },
+    {
+    path: "https://www.youtube.com/watch?v=dr3j42ObXLk",
+    thumbnail:
+      "https://mappemonde-archive.mgm.fr/num20/fig08/prix1.jpg",
+    title: "Construire un poster avec inkscape"
+  },
+      {
+    path: "https://www.youtube.com/watch?v=rFT6Oq9bZSE",
+    thumbnail:
+      "https://i.ytimg.com/vi/rFT6Oq9bZSE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOW8B8I5zTCkgstYrznMTkoQsHaw",
+    title: "Concevoir une inforgraphie"
+  },
+
+         {
+    path: "https://www.youtube.com/watch?v=SiDwGyo4x0g",
+    thumbnail:
+      "https://magrit.hypotheses.org/files/2021/09/logo_magrit.png",
+    title: "De Magrit à Inkscape"
+  },
+           {
+    path: "https://www.youtube.com/watch?v=cj57JsdItHQ",
+    thumbnail:
+      "https://i.ytimg.com/vi/cj57JsdItHQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDfbe44M9CNPlDw54WNdvp6eJi6sg",
+    title: "Fonds de cartes"
+  },
+             {
+    path: "https://www.youtube.com/watch?v=lcdl23vWWYA",
+    thumbnail:
+      "https://i.ytimg.com/vi/lcdl23vWWYA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDiG8Qx5RXkge1y9C4zXqdFwHrReg",
+    title: "Projections cartographiques"
+  },
+               {
+    path: "https://www.youtube.com/watch?v=HfyDRCsChM8",
+    thumbnail:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhJPr3hKfyAPuUATX02bKgGJJ_YhrwepyePuxmIn2Udw&s",
+    title: "Mise en forme des données"
+  },
+                 {
+    path: "https://www.youtube.com/watch?v=Hfa9lPF5HeI",
+    thumbnail:
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/OpenOffice.org_Calc.png",
+    title: "Mise en fome des données pour la cartographie"
+  },
+                   {
+    path: "https://www.youtube.com/watch?v=7J5CCpGSGvA",
+    thumbnail:
+      "https://i.ytimg.com/vi/7J5CCpGSGvA/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBDPFRdIgTfE3LBvXYa1WaeYGefHQ",
+    title: "Discretisations"
+  },
+ 
+ 
+])
+))
+}});
+
+define({id: "5bb37e22", inputs: ["previews2","display"], body: async (previews2,display) => {
+display(await(
+previews2([
+
+
+  {
+    path: "https://www.youtube.com/watch?v=n7_G-_qZ0oQ",
+    thumbnail:
+      "https://pbs.twimg.com/media/GJ1r1NlWgAAN4tE?format=jpg",
+    title: "2024 - Notebooks et geovisu"
+  },
+  {
+    path: "https://www.youtube.com/watch?v=ffueA9AShLQ",
+    thumbnail:
+      "https://irihs.univ-rouen.fr/sites/irihs.univ-rouen.fr/files/styles/large/public/field/image/logo_mate_shs_0.png?itok=aQDDIm74",
+    title: "2023 - Mate SHS"
+  },
+    {
+    path: "https://www.youtube.com/watch?v=xgHhWonFS4",
+    thumbnail:
+      "https://renatis.cnrs.fr/wp-content/uploads/2021/11/gt-donnees-logo.png",
+    title: "2023 - CNRS (Atelier données)"
+  },
+      {
+    path: "https://www.youtube.com/watch?v=HEZbMnJ50Ms",
+    thumbnail:
+      "https://www.gagnac-sur-garonne.fr/wp-content/uploads/2021/01/nouveau-logo_insee.jpg",
+    title: "2022 - INSEE (réseau data-scientists)"
+  },
+        {
+    path: "https://www.youtube.com/watch?v=Ml5jjDxXTZA",
+    thumbnail:
+      "https://imageo.hypotheses.org/files/2017/04/LOGO_ImaGEO_09_bandeau_02.jpg",
+    title: "2021 - IMAGEO Consortium"
+  },
+
+ 
+])
+))
+}});
+
+define({id: "deba721d", inputs: ["previews2","display"], body: async (previews2,display) => {
+display(await(
+previews2([
+  {
+    path: "https://neocarto.github.io/geounivr2024/VEN1_geoviz_TP/docs/index.html",
+    thumbnail:
+      "https://raw.githubusercontent.com/neocarto/geounivr2024/main/VEN1_geoviz_TP/img/geoviz.jpeg",
+    title: "2024 - {ojs} et geoviz"
+  },
+    {
+    path: "https://neocarto.github.io/geounivr2024/MAR_2_carto/index.html",
+    thumbnail:
+      "https://riatelab.github.io/mapsf/logo.png",
+    title: "2024 - Carto avec R"
+  },
+
+      {
+    path: "https://ee-cist.github.io/CAR2_cartodyn/TP1/docs/index.html",
+    thumbnail:
+      "https://raw.githubusercontent.com/riatelab/bertin/main/img/logo.png",
+    title: "2023 - Carto avec Bertin.js"
+  },
+     {
+    path: "https://ee-cist.github.io/CAR2_cartodyn/TP2/docs/index.html",
+    thumbnail:
+      "https://raw.githubusercontent.com/EE-CIST/CAR2_cartodyn/main/img/banner.png",
+    title: "2023 - Dashboard avec Quarto"
+  },
+      {
+    path: "https://transcarto.github.io/rcartograms/TRANSCARTO_cartograms.html",
+    thumbnail:
+      "https://raw.githubusercontent.com/transcarto/rcartograms/main/maps/gastnerseguy.png",
+    title: "2021 - Anamorphoses avec R"
+  },
+    {
+    path: "https://transcarto.github.io/rflows/TRANSCARTO_flows.html",
+    thumbnail:
+      "https://raw.githubusercontent.com/transcarto/rflows/master/maps/migrexplorer1.png",
+    title: "2021 - Flux avec R"
+  }
+ 
+])
+))
+}});
+
 </script>
 <div id="observablehq-center">
 <main id="observablehq-main" class="observablehq">
-<link rel="stylesheet" href="./_file/css/style.ad45c1cf.css">
-<div id="cell-9eeaefe2" class="observablehq observablehq--block"></div>
+<link rel="stylesheet" href="./_file/css/style.22f336bc.css">
+<div id="cell-d027c060" class="observablehq observablehq--block"></div>
 <div class="hero"><h1> <img src="./_file/images/nico.1feb9b7a.jpg" width="110px"> Nicolas Lambert</h1></div>
 <div class="note">In this section, I refer to my teaching and training activities. This section is in French</div>
 <div id="cell-5ddaee6f" class="observablehq observablehq--block observablehq--loading"></div>
+<h1 id="cours-et-formations" tabindex="-1"><a class="observablehq-header-anchor" href="#cours-et-formations">Cours et formations</a></h1>
+<br>
+<h2>Cartographie</h2>
+<div id="cell-b76a1268" class="observablehq observablehq--block observablehq--loading"></div>
+<h2>Géovisualisation</h2>
+<div id="cell-5bb37e22" class="observablehq observablehq--block observablehq--loading"></div>
+<h2>TP</h2>
+<div id="cell-deba721d" class="observablehq observablehq--block observablehq--loading"></div>
+<h1 id="historique-des-enseignements" tabindex="-1"><a class="observablehq-header-anchor" href="#historique-des-enseignements">Historique des enseignements</a></h1>
+<br>
 <h2>2023 - 2024</h2>
 <ul>
 <li><b>École thématique (5j)</b> - Méthodes et outils des sciences des territoires (Monastir, Tunisie)</li>
@@ -114,6 +295,6 @@ menu("teach")
 </ul>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-04-25T09:17:15">Apr 25, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-05-23T11:41:49">May 23, 2024</a>.</div>
 </footer>
 </div>
