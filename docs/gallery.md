@@ -18,10 +18,28 @@ import {previews, previews2} from "./helpers/preview.js"
 menu("gallery")
 ```
 
-# xxxx
+# Gallery
 
 ```js
 previews([
+    {
+    path: "@neocartocnrs/gaza",
+    thumbnail:
+      "ef87ecd69c6d1b97aaca0508b20cc855727bf3e14a5f7c9abb790c51ee9d5593",
+    title: "Damage in Gaza"
+  },
+      {
+    path: "@neocartocnrs/radiographie-politique-de-la-france",
+    thumbnail:
+      "920c0a1b824cf2989bd740d242e757bf0173c89c3e135f848128783e4459df12",
+    title: "Parliamentary elections, 2024"
+  },
+        {
+    path: "@neocartocnrs/migrexplorer",
+    thumbnail:
+      "9348a3242200c8e426129c4f17f858ba815fd09e2bd43e339c7e40708b9df04b",
+    title: "Migrexplorer"
+  },
   {
     path: "@neocartocnrs/world-population",
     thumbnail:
@@ -56,13 +74,19 @@ previews([
     path: "@neocartocnrs/geoviz-scalebar",
     thumbnail:
       "d239941d88d7dace5565656503220517beaade015d8e7c890cf720579563dda9",
-    title: "Why it's better not to add scalebars to world maps"
+    title: "About scalebars"
   },
   {
     path: "@neocartocnrs/quelle-connerie-la-guerre",
     thumbnail:
       "14d5fb22e9ad43ddf841b91cc21a67e76d3e7b7e9f4f83f3648d9adc25be3d38",
     title: "Global arms sales [FR]"
+  },
+    {
+    path: "@neocartocnrs/africa-a-murdered-continent",
+    thumbnail:
+      "cd683d41781bd0b592dff6f4495d7711b3da02c45d65713fd9d28c0030105726",
+    title: "A Murdered Continent"
   },
   {
     path: "@neocartocnrs/electricity-map",
@@ -78,4 +102,6 @@ previews([
   }
 ])
 ```
+
+See more: [observablehq.com/@neocartocnrs](https://observablehq.com/@neocartocnrs?tab=recents)
 
