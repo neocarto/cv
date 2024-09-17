@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>xxxx | Nicolas Lambert</title>
+<title>Gallery | Nicolas Lambert</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
 <link rel="preload" as="style" href="./_observablehq/theme-glacier.css">
@@ -10,7 +10,7 @@
 <link rel="modulepreload" href="./_observablehq/client.js">
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
-<link rel="modulepreload" href="./_import/helpers/menu.7a695de9.js">
+<link rel="modulepreload" href="./_import/helpers/menu.2f505823.js">
 <link rel="modulepreload" href="./_import/helpers/preview.09551182.js">
 <link rel="modulepreload" href="./_npm/htl@0.3.1/+esm.js">
 <script type="module">
@@ -18,7 +18,7 @@
 import {define} from "./_observablehq/client.js";
 
 define({id: "8c67ada6", outputs: ["menu","previews","previews2"], body: async () => {
-const [{menu}, {previews, previews2}] = await Promise.all([import("./_import/helpers/menu.7a695de9.js"), import("./_import/helpers/preview.09551182.js")]);
+const [{menu}, {previews, previews2}] = await Promise.all([import("./_import/helpers/menu.2f505823.js"), import("./_import/helpers/preview.09551182.js")]);
 
 return {menu,previews,previews2};
 }});
@@ -29,9 +29,27 @@ menu("gallery")
 ))
 }});
 
-define({id: "538d645c", inputs: ["previews","display"], body: async (previews,display) => {
+define({id: "550b5118", inputs: ["previews","display"], body: async (previews,display) => {
 display(await(
 previews([
+    {
+    path: "@neocartocnrs/gaza",
+    thumbnail:
+      "ef87ecd69c6d1b97aaca0508b20cc855727bf3e14a5f7c9abb790c51ee9d5593",
+    title: "Damage in Gaza"
+  },
+      {
+    path: "@neocartocnrs/radiographie-politique-de-la-france",
+    thumbnail:
+      "920c0a1b824cf2989bd740d242e757bf0173c89c3e135f848128783e4459df12",
+    title: "Parliamentary elections, 2024"
+  },
+        {
+    path: "@neocartocnrs/migrexplorer",
+    thumbnail:
+      "9348a3242200c8e426129c4f17f858ba815fd09e2bd43e339c7e40708b9df04b",
+    title: "Migrexplorer"
+  },
   {
     path: "@neocartocnrs/world-population",
     thumbnail:
@@ -66,13 +84,19 @@ previews([
     path: "@neocartocnrs/geoviz-scalebar",
     thumbnail:
       "d239941d88d7dace5565656503220517beaade015d8e7c890cf720579563dda9",
-    title: "Why it's better not to add scalebars to world maps"
+    title: "About scalebars"
   },
   {
     path: "@neocartocnrs/quelle-connerie-la-guerre",
     thumbnail:
       "14d5fb22e9ad43ddf841b91cc21a67e76d3e7b7e9f4f83f3648d9adc25be3d38",
     title: "Global arms sales [FR]"
+  },
+    {
+    path: "@neocartocnrs/africa-a-murdered-continent",
+    thumbnail:
+      "cd683d41781bd0b592dff6f4495d7711b3da02c45d65713fd9d28c0030105726",
+    title: "A Murdered Continent"
   },
   {
     path: "@neocartocnrs/electricity-map",
@@ -98,10 +122,11 @@ previews([
 <div class="hero"><h1> <img src="./_file/images/nico.1feb9b7a.jpg" width="110px"> Nicolas Lambert</h1></div>
 <div class="note">In this section, I link to a selection of geovisualizations. You'll find plenty more in my <a href="https://observablehq.com/@neocartocnrs" target="_BLANK">observable notebooks</a> account.</div>
 <div id="cell-a3cb5c67" class="observablehq observablehq--block observablehq--loading"></div>
-<h1 id="xxxx" tabindex="-1"><a class="observablehq-header-anchor" href="#xxxx">xxxx</a></h1>
-<div id="cell-538d645c" class="observablehq observablehq--block observablehq--loading"></div>
+<h1 id="gallery" tabindex="-1"><a class="observablehq-header-anchor" href="#gallery">Gallery</a></h1>
+<div id="cell-550b5118" class="observablehq observablehq--block observablehq--loading"></div>
+<p>See more: <a href="https://observablehq.com/@neocartocnrs?tab=recents">observablehq.com/@neocartocnrs</a></p>
 </main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-07-09T15:23:26">Jul 9, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2024-09-17T09:13:58">Sep 17, 2024</a>.</div>
 </footer>
 </div>
