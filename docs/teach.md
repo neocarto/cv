@@ -206,6 +206,7 @@ previews2([
 <h2>2022 - 2023</h2>
 
 - <b>École thématique (15j)</b> Méthodes et outils des sciences des territoires, une perspective Nord-Sud, Sud-Nord, Sud-Sud (Ouidah, Bénin)
+- <b>Atelier Sagéo</b> Articulation de différents langages (R, JavaScript et Python) pour la géovisualisation avec Quarto (Québec, Canada)
 - <b>CM (2h)</b> - Observable pour les cartographes, Master 2 Carthagéo
 - <b>CI (21h)</b> - Techniques et outils option cartographie, Master I géographie université Paris-Cité.
 
