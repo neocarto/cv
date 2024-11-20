@@ -37,6 +37,9 @@ import {menu} from "./helpers/menu.js"
   <a href ="https://vis.social/@neocarto" target="_BLANK"><div class="card">
  <img src ="images/mastodon.png" width="25px"></img>
   </div></a>
+  <a href ="https://bsky.app/profile/neocarto.bsky.social" target="_BLANK"><div class="card">
+    <img src ="images/Bluesky_Logo.svg" width="25px"></img>
+  </div></a>
   <a href ="https://twitter.com/neocartocnrs" target="_BLANK"><div class="card">
     <img src ="images/X.jpg" width="25px"></img>
   </div></a>
