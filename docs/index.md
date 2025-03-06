@@ -40,8 +40,8 @@ import {menu} from "./helpers/menu.js"
   <a href ="https://bsky.app/profile/neocarto.bsky.social" target="_BLANK"><div class="card">
     <img src ="images/Bluesky_Logo.svg" width="25px"></img>
   </div></a>
-  <a href ="https://twitter.com/neocartocnrs" target="_BLANK"><div class="card">
-    <img src ="images/X.jpg" width="25px"></img>
+  <a href ="https://www.instagram.com/cartococo/" target="_BLANK"><div class="card">
+    <img src ="images/Instagram.png" width="25px"></img>
   </div></a>
   <a href ="https://www.youtube.com/channel/UCoZLDHWvG1cp4h6IH4nIegQ" target="_BLANK"><div class="card">
    <img src ="images/youtube.png" width="25px"></img>
