@@ -26,7 +26,7 @@ menu("books")
 # As lead author 
 
 <div class="grid grid-cols-3" align = "center">
-<div class="card"><h1>2025</h1><img src ="images/cartographia.png" width="100%"><p><a href ="https://www.taylorfrancis.com/books/978042929196" target = "_BLANK">Bahoken F. & Lambert, N. (2025).Cartographie - Comment les géographes (re)dessinent le Monde. Armand Colin.</a></p></div>
+<div class="card"><h1>2025</h1><img src ="images/cartographia.png" width="100%"><p><a href ="https://www.taylorfrancis.com/books/978042929196" target = "_BLANK">Bahoken F. & Lambert, N. (2025).Cartographia - Comment les géographes (re)dessinent le Monde. Armand Colin.</a></p></div>
 <div class="card"><h1>2025</h1><img src ="images/ManuelCartoV2.png" width="100%"><p><a href ="https://www.taylorfrancis.com/books/978042929196" target = "_BLANK">Lambert, N., & Zanin, C. (2025).Manuel de cartographie  (2e édition) : principes, méthodes, applications. Armand Colin.</a></p></div>
   <div class="card"><h1>2020</h1><img src ="images/handbook.png" width="100%"><p><a href ="https://www.taylorfrancis.com/books/978042929196" target = "_BLANK">Lambert, N., & Zanin, C. (2020). Practical Handbook of Thematic Cartography: Principles, Methods, and Applications. CRC Press.</a></p></div>
   <div class="card"><h1>2019</h1><img src ="images/MadMaps.png" width="100%"><p><a href ="https://www.armand-colin.com/mad-maps-latlas-qui-va-changer-votre-vision-du-monde" target = "_BLANK">Lambert, N., & Zanin, C. (2019). Mad Maps – L’atlas qui va changer votre vision du Monde. Armand Colin.</a></p></div>
