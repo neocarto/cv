@@ -197,6 +197,19 @@ previews2([
 
 <br/>
 
+<h2>2025 - 2026</h2>
+
+- <b>CM (2h)</b> - Géovisualisation avec Observable, Master 2 Carthagéo
+- <b>CI (24h)</b> - Cartographie d'édition et cartographie numérique, Master I géographie université Paris-Cité.
+- <b>CI (12h)</b> - Webmapping, Master 2 GAED
+
+<h2>2024 - 2025</h2>
+
+- <b>École thématique (5j)</b> - Atelier GIT. École Thématique SO-SHS (Oléron, France)
+- <b>École thématique (3j)</b> - Géovisualiser pour explorer la robustesse des données & Explorer la robustesse des géovisualisations Robustesse dans les méthodologies des Sciences de l'Information Géographique (Avignon, France)
+- <b>CM (2h)</b> - Observable pour les cartographes, Master 2 Carthagéo
+- <b>CI (21h)</b> - Techniques et outils option cartographie, Master I géographie université Paris-Cité.
+
 <h2>2023 - 2024</h2>
 
 - <b>École thématique (5j)</b> - Méthodes et outils des sciences des territoires (Monastir, Tunisie)
