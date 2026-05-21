@@ -202,6 +202,7 @@ previews2([
 - <b>CM (2h)</b> - Géovisualisation avec Observable, Master 2 Carthagéo [voir](https://observablehq.com/collection/@neocartocnrs/observable-cest-quoi)
 - <b>CI (24h)</b> - Cartographie d'édition et cartographie numérique, Master I géographie université Paris-Cité. [voir](https://observablehq.com/@cartographie/supports)
 - <b>CI (12h)</b> - Webmapping, Master 2 GAED [voir](https://neocarto.github.io/Webmapping/)
+- <b>CI (12h)</b> - Géovisualisation avec les notebooks Observable, Ecole Doctorale 624 - Sciences des Sociétés [voir](https://observablehq.com/d/0cb2a54531cb5767?collection=@riate/ecole-doctorale)
 
 <h2>2024 - 2025</h2>
 
