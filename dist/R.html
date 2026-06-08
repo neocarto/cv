@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Last R packages | Nicolas Lambert</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-glacier.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-glacier.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<link rel="modulepreload" href="./_import/helpers/menu.d06cd772.js">
+<script type="module">
+
+import {define} from "./_observablehq/client.js";
+
+define({id: "9eeaefe2", outputs: ["menu"], body: async () => {
+const {menu} = await import("./_import/helpers/menu.d06cd772.js");
+
+return {menu};
+}});
+
+define({id: "600f8e6d", inputs: ["menu","display"], body: async (menu,display) => {
+display(await(
+menu("R")
+))
+}});
+
+</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<div id="cell-9eeaefe2" class="observablehq observablehq--block"></div>
+<link rel="stylesheet" href="./_file/css/style.22f336bc.css">
+<div class="hero"><h1> <img src="./_file/images/nico.1feb9b7a.jpg" width="110px"> Nicolas Lambert</h1></div>
+<div class="note">In this section, I share my main software development activities in R language. You'll find lots more on my <a href="https://github.com/neocarto" target="_BLANK">github</a> 
+account.</div>
+<div id="cell-600f8e6d" class="observablehq observablehq--block observablehq--loading"></div>
+<h1 id="last-r-packages" tabindex="-1"><a class="observablehq-header-anchor" href="#last-r-packages">Last R packages</a></h1>
+<p><img src="./_file/images/geoviz_R.26a5457d.svg" width="200px"></p>
+<p><strong><a href="https://github.com/riatelab/geoviz_R"><code>geoviz</code></a></strong> is an R package for thematic mapping. It's an R wrapper around the geoviz JavaScript library, itself based on the d3.js ecosystem. Like the original javascript library, the package can be used to create a wide range of interactive, zoomable vector maps, taking advantage of d3's many features: proportional symbols, pictograms, typologies, choropleth maps, spikes, tiles, Dorling cartograms, etc. It can also be used to create pretty static vectorial maps in SVG format, suitable for editorial cartography.</p>
+<p><img src="./_file/images/planisphere.c920e2d3.png" width="200px"></p>
+<p><strong><a href="https://github.com/riatelab/panisphere"><code>planisphere</code></a></strong> is an R package that provides access to a wide range of map projections. It allows spatial data frames containing geographic coordinates (latitude/longitude) to be projected. Projection calculations are performed using spherical geometry rather than ellipsoidal geodetic models.</p>
+<h1 id="see-also" tabindex="-1"><a class="observablehq-header-anchor" href="#see-also">See also</a></h1>
+<p><strong><a href="https://github.com/neocarto/Mapepetrud"><code>Mapepetrud</code></a></strong> (experimental) is an R package that allows to make extruded maps from sf objects (polygons or multipolygons).</p>
+<p><strong><a href="https://github.com/neocarto/Mapepetrud"><code>Flowmapper</code></a></strong> (experimental) fow maps in R.</p>
+<div class="grid grid-cols-4" style="vertical-align: middle; display: flex;">
+    <a href="https://github.com/neocarto" target="_BLANK"><div class="card">
+<img src="./_file/images/github.adfa7131.png" width="25px">
+  </div></a>
+</div></main>
+<footer id="observablehq-footer">
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2026-06-08T17:14:27">Jun 8, 2026</a>.</div>
+</footer>
+</div>
