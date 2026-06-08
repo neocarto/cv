@@ -13,7 +13,7 @@
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
 <link rel="modulepreload" href="./_npm/geotoolbox@2.0.3/+esm.js">
-<link rel="modulepreload" href="./_import/helpers/menu.2f505823.js">
+<link rel="modulepreload" href="./_import/helpers/menu.d06cd772.js">
 <link rel="modulepreload" href="./_import/components/geoviz.373d7801.js">
 <link rel="modulepreload" href="./_import/components/geotoolbox.52fc44b3.js">
 <link rel="modulepreload" href="./_import/components/bertin.e986ada6.js">
@@ -87,7 +87,7 @@ registerFile("./data/pub.json", {"name":"./data/pub.json","mimeType":"applicatio
 registerFile("./data/world.json", {"name":"./data/world.json","mimeType":"application/json","path":"./_file/data/world.0a51aaae.json"});
 
 define({id: "22b2f2be", outputs: ["geo","menu","globe","tile","thematic","simplify","buffer","intersect","buffermap","dots","grid","smooth"], body: async () => {
-const [geo, {menu}, {globe, tile, thematic}, {simplify, buffer, intersect, buffermap}, {dots, grid, smooth}] = await Promise.all([import("./_npm/geotoolbox@2.0.3/+esm.js"), import("./_import/helpers/menu.2f505823.js"), import("./_import/components/geoviz.373d7801.js"), import("./_import/components/geotoolbox.52fc44b3.js"), import("./_import/components/bertin.e986ada6.js")]);
+const [geo, {menu}, {globe, tile, thematic}, {simplify, buffer, intersect, buffermap}, {dots, grid, smooth}] = await Promise.all([import("./_npm/geotoolbox@2.0.3/+esm.js"), import("./_import/helpers/menu.d06cd772.js"), import("./_import/components/geoviz.373d7801.js"), import("./_import/components/geotoolbox.52fc44b3.js"), import("./_import/components/bertin.e986ada6.js")]);
 // IMPORTS
 
 return {geo,menu,globe,tile,thematic,simplify,buffer,intersect,buffermap,dots,grid,smooth};
@@ -250,7 +250,7 @@ resize((width) => smooth(width, smoothk))
 <div id="cell-f7d4b229" class="observablehq observablehq--block"></div>
 <div id="cell-89295569" class="observablehq observablehq--block"></div>
 <div class="hero"><h1> <img src="./_file/images/nico.1feb9b7a.jpg" width="110px"> Nicolas Lambert</h1></div>
-<div class="note">In this section, I share my main software development activities. You'll find lots more on my <a href="https://github.com/neocarto" target="_BLANK">github</a> account.</div>
+<div class="note">In this section, I share my main software development activities in JavaScript. You'll find lots more on my <a href="https://github.com/neocarto" target="_BLANK">github</a> account.</div>
 <div id="cell-95f9b2f9" class="observablehq observablehq--block observablehq--loading"></div>
 <h1 id="geoviz" tabindex="-1"><a class="observablehq-header-anchor" href="#geoviz">Geoviz</a></h1>
 <p><strong><a href="https://github.com/riatelab/geoviz"><code>geoviz</code></a></strong> is a JavaScript library for designing thematic maps. The library provides a set of d3 compatible functions that you can mix with the usual d3 syntax. The library is designed to be intuitive and concise. It allow to manage different geographic layers (points, lines, polygons) and marks (circles, labels, scale bar, title, north arrow, etc.) to design pretty maps. Its use is particularly well suited to Observable notebooks. Maps designed with geoviz are thematic, vectorial, interactive, interoperable and zoomable.</p>
@@ -326,6 +326,6 @@ See the <a href="https://github.com/riatelab/bertin" targt="_BLANK">code reposit
   </div></a>
 </div></main>
 <footer id="observablehq-footer">
-<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2026-05-21T09:16:41">May 21, 2026</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank">Observable</a> on <a title="2026-06-08T15:14:26">Jun 8, 2026</a>.</div>
 </footer>
 </div>

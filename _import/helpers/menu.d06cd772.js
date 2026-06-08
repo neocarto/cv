@@ -18,7 +18,10 @@ export function menu(page) {
   }>Teaching</div></a>
   <a href ="libs"><div class="card" ${
     page == "libs" ? on : off
-  }>JS libraries</div></a> <a href ="gallery"><div class="card" ${
+  }>JS libraries</div></a>
+  <a href ="R"><div class="card" ${
+    page == "R" ? on : off
+  }>R packages</div></a> <a href ="gallery"><div class="card" ${
     page == "gallery" ? on : off
   }>Gallery</div></a>
   </div>`;
