@@ -58,7 +58,7 @@ const bufferk2 = Generators.input(buffer_k2);
 
 <div class = "hero"><h1> <img src="images/nico.jpg" width="110px"></img> Nicolas Lambert</h1></div>
 
-<div class="note">In this section, I share my main software development activities. You'll find lots more on my <a href="https://github.com/neocarto" target = "_BLANK">github</a> account.</div>
+<div class="note">In this section, I share my main software development activities in JavaScript. You'll find lots more on my <a href="https://github.com/neocarto" target = "_BLANK">github</a> account.</div>
 
 ```js
 menu("libs")
