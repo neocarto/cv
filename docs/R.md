@@ -20,9 +20,9 @@ menu("R")
 
 # Last R packages 
 
-<img src ="images/geoviz_R.svg" width="200px"></img>
+<img src ="images/geovizr.png" width="200px"></img>
 
-**[`geoviz`](https://github.com/riatelab/geoviz_R)** is an R package for thematic mapping. It's an R wrapper around the geoviz JavaScript library, itself based on the d3.js ecosystem. Like the original javascript library, the package can be used to create a wide range of interactive, zoomable vector maps, taking advantage of d3's many features: proportional symbols, pictograms, typologies, choropleth maps, spikes, tiles, Dorling cartograms, etc. It can also be used to create pretty static vectorial maps in SVG format, suitable for editorial cartography.
+**[`geovizr`](https://github.com/riatelab/geovizr)** is an R package for thematic mapping. It's an R wrapper around the geoviz JavaScript library, itself based on the d3.js ecosystem. Like the original javascript library, the package can be used to create a wide range of interactive, zoomable vector maps, taking advantage of d3's many features: proportional symbols, pictograms, typologies, choropleth maps, spikes, tiles, Dorling cartograms, etc. It can also be used to create pretty static vectorial maps in SVG format, suitable for editorial cartography.
 
 <img src ="images/planisphere.png" width="200px"></img>
 
